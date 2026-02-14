@@ -16,25 +16,24 @@ void printProblem1Details(int path[], int pathLen, int source, int target,
     printf("Destination: (%.6f, %.6f)\n", destLon, destLat);
     printf("\n");
 
-    // If source is not exactly on a node, show walking segment
-    if (fabs(nodes[source].lat - srcLat) > 1e-6 || 
-        fabs(nodes[source].lon - srcLon) > 1e-6) {
+    if (fabs(nodes[source].lat - srcLat) > 1e-6 || fabs(nodes[source].lon - srcLon) > 1e-6) 
+    {
         double walkDist = haversineDistance(srcLat, srcLon, 
                                            nodes[source].lat, nodes[source].lon);
-        printf("Walk from Source (%.6f, %.6f) to (%.6f, %.6f), Distance: %.3f km, Cost: ৳0.00\n",
+        printf("Walk from Source (%.6f, %.6f) to (%.6f, %.6f), Distance: %.3f km, Cost: ৳0.00\n", 
                srcLon, srcLat, nodes[source].lon, nodes[source].lat, walkDist);
         totalDistance += walkDist;
     }
 
-    // Print each car segment
     for (int i = pathLen - 1; i > 0; i--) {
         int from = path[i];
-        int to = path[i - 1];
+        int to = path[i - 1];                                   // we print the car segments
 
-        // Find the edge distance
         double distSeg = 0;
-        for (int j = 0; j < numEdges; j++) {
-            if (edges[j].from == from && edges[j].to == to && edges[j].mode == MODE_CAR) {
+        for (int j = 0; j < numEdges; j++) 
+        {
+            if (edges[j].from == from && edges[j].to == to && edges[j].mode == MODE_CAR)        // edge distance
+            {
                 distSeg = edges[j].distance;
                 break;
             }
@@ -50,13 +49,13 @@ void printProblem1Details(int path[], int pathLen, int source, int target,
                distSeg, costSeg);
     }
 
-    // If destination is not exactly on a node, show walking segment
-    if (fabs(nodes[target].lat - destLat) > 1e-6 || 
-        fabs(nodes[target].lon - destLon) > 1e-6) {
-        double walkDist = haversineDistance(nodes[target].lat, nodes[target].lon,
+    if (fabs(nodes[target].lat - destLat) > 1e-6 || fabs(nodes[target].lon - destLon) > 1e-6) 
+    {
+        double walkDist = haversineDistance(nodes[target].lat, nodes[target].lon,               // if the edge is not in the node we do sum walking
                                            destLat, destLon);
         printf("Walk from (%.6f, %.6f) to Destination (%.6f, %.6f), Distance: %.3f km, Cost: ৳0.00\n",
                nodes[target].lon, nodes[target].lat, destLon, destLat, walkDist);
+
         totalDistance += walkDist;
     }
 
@@ -85,21 +84,23 @@ void runProblem1() {
     printf("Source Node: %s (%.6f, %.6f)\n", nodes[source].name, nodes[source].lat, nodes[source].lon);
     printf("Target Node: %s (%.6f, %.6f)\n", nodes[target].name, nodes[target].lat, nodes[target].lon);
 
-    // Dijkstra initialization
-    for (int i = 0; i < numNodes; i++) {
+    for (int i = 0; i < numNodes; i++) 
+    {
         dist[i] = INF;
-        prev[i] = -1;
+        prev[i] = -1;                   // Dijkstra is coming for you (T-T)
         visited[i] = 0;
     }
     dist[source] = 0;
 
-    // Dijkstra's algorithm
-    for (int count = 0; count < numNodes; count++) {
+    for (int count = 0; count < numNodes; count++)              // Dijkstra go brrrrrrrrrrrrrr
+    {
         int u = -1;
         double minDist = INF;
 
-        for (int i = 0; i < numNodes; i++) {
-            if (!visited[i] && dist[i] < minDist) {
+        for (int i = 0; i < numNodes; i++)
+        {
+            if (!visited[i] && dist[i] < minDist) 
+            {
                 minDist = dist[i];
                 u = i;
             }
@@ -109,12 +110,15 @@ void runProblem1() {
 
         visited[u] = 1;
 
-        // Relax edges
-        for (int i = 0; i < numEdges; i++) {
-            if (edges[i].from == u && edges[i].mode == MODE_CAR) {
+        for (int i = 0; i < numEdges; i++) 
+        {
+            if (edges[i].from == u && edges[i].mode == MODE_CAR) 
+            {
                 int v = edges[i].to;
-                double newDist = dist[u] + edges[i].distance;
-                if (newDist < dist[v]) {
+                double newDist = dist[u] + edges[i].distance;           // we do sum relaxing
+
+                if (newDist < dist[v]) 
+                {
                     dist[v] = newDist;
                     prev[v] = u;
                 }
@@ -122,11 +126,13 @@ void runProblem1() {
         }
     }
 
-    // Build path
+    
     int path[MAX_NODES];
     int pathLen = 0;
-    for (int at = target; at != -1; at = prev[at]) {
-        path[pathLen++] = at;
+
+    for (int at = target; at != -1; at = prev[at]) 
+    {
+        path[pathLen++] = at;               // path building
     }
 
     if (pathLen == 1 || dist[target] >= INF) {

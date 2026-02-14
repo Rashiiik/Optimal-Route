@@ -16,24 +16,22 @@ void printProblem2DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
     printf("Destination: (%.6f, %.6f)\n", destLon, destLat);
     printf("\n");
 
-    // If source is not exactly on a node, show walking segment
-    if (fabs(nodes[source].lat - srcLat) > 1e-6 || 
-        fabs(nodes[source].lon - srcLon) > 1e-6) {
-        double walkDist = haversineDistance(srcLat, srcLon, 
-                                           nodes[source].lat, nodes[source].lon);
+    if (fabs(nodes[source].lat - srcLat) > 1e-6 || fabs(nodes[source].lon - srcLon) > 1e-6)         // Deja vu??
+    {
+        double walkDist = haversineDistance(srcLat, srcLon, nodes[source].lat, nodes[source].lon);
+
         printf("Walk from Source (%.6f, %.6f) to %s (%.6f, %.6f), Distance: %.3f km, Cost: ৳0.00\n",
                srcLon, srcLat, nodes[source].name, nodes[source].lon, nodes[source].lat, walkDist);
         totalDistance += walkDist;
     }
 
-    // Print each segment using the stored edge information
     for (int i = pathLen - 1; i > 0; i--) {
         int from = path[i];
         int to = path[i - 1];
-        int edgeIdx = pathEdges[i - 1];  // Edge that leads TO path[i-1]
+        int edgeIdx = pathEdges[i - 1];  // Edge that leads to path[i-1]
         
         double distSeg = 0;
-        Mode edgeMode = MODE_CAR;
+        Mode edgeMode = MODE_CAR;               // prints trip instructions
         
         if (edgeIdx >= 0 && edgeIdx < numEdges) {
             distSeg = edges[edgeIdx].distance;
@@ -52,13 +50,12 @@ void printProblem2DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
                distSeg, costSeg);
     }
 
-    // If destination is not exactly on a node, show walking segment
-    if (fabs(nodes[target].lat - destLat) > 1e-6 || 
-        fabs(nodes[target].lon - destLon) > 1e-6) {
-        double walkDist = haversineDistance(nodes[target].lat, nodes[target].lon,
-                                           destLat, destLon);
+    if (fabs(nodes[target].lat - destLat) > 1e-6 || fabs(nodes[target].lon - destLon) > 1e-6) 
+    {
+        double walkDist = haversineDistance(nodes[target].lat, nodes[target].lon, destLat, destLon);
         printf("Walk from %s (%.6f, %.6f) to Destination (%.6f, %.6f), Distance: %.3f km, Cost: ৳0.00\n",
                nodes[target].name, nodes[target].lon, nodes[target].lat, destLon, destLat, walkDist);
+
         totalDistance += walkDist;
     }
 
@@ -67,6 +64,7 @@ void printProblem2DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
 }
 
 void runProblem2() {
+
     double srcLat, srcLon, destLat, destLon;
 
     printf("Enter source latitude and longitude: ");
@@ -87,11 +85,11 @@ void runProblem2() {
     printf("Source Node: %s (%.6f, %.6f)\n", nodes[source].name, nodes[source].lat, nodes[source].lon);
     printf("Target Node: %s (%.6f, %.6f)\n", nodes[target].name, nodes[target].lat, nodes[target].lon);
 
-    // Dijkstra initialization - optimizing for COST
+    
     for (int i = 0; i < numNodes; i++) {
         dist[i] = INF;
         prev[i] = -1;
-        prevEdge[i] = -1;  // Track which edge was used
+        prevEdge[i] = -1;  
         visited[i] = 0;
     }
     dist[source] = 0;
@@ -99,13 +97,16 @@ void runProblem2() {
     double carRate = 20.0;
     double metroRate = 5.0;
 
-    // Dijkstra's algorithm - optimizing for cost
-    for (int count = 0; count < numNodes; count++) {
-        int u = -1;
-        double minCost = INF;
+    
+    for (int count = 0; count < numNodes; count++) 
+    {
+        int u = -1;                                     
+        double minCost = INF;       // Maybe using a arbitrary large number isnt one of the brightest ideas
 
-        for (int i = 0; i < numNodes; i++) {
-            if (!visited[i] && dist[i] < minCost) {
+        for (int i = 0; i < numNodes; i++) 
+        {
+            if (!visited[i] && dist[i] < minCost) 
+            {
                 minCost = dist[i];
                 u = i;
             }
@@ -115,11 +116,12 @@ void runProblem2() {
 
         visited[u] = 1;
 
-        // Relax edges - considering car and metro
-        for (int i = 0; i < numEdges; i++) {
-            if (edges[i].from == u) {
-                // Only consider CAR and METRO modes for Problem 2
-                if (edges[i].mode != MODE_CAR && edges[i].mode != MODE_METRO) {
+        for (int i = 0; i < numEdges; i++) 
+        {
+            if (edges[i].from == u) 
+            {
+                if (edges[i].mode != MODE_CAR && edges[i].mode != MODE_METRO) 
+                {
                     continue;
                 }
                 
@@ -129,7 +131,8 @@ void runProblem2() {
                 double edgeCost = edges[i].distance * rate;
                 double newCost = dist[u] + edgeCost;
                 
-                if (newCost < dist[v]) {
+                if (newCost < dist[v]) 
+                {
                     dist[v] = newCost;
                     prev[v] = u;
                     prevEdge[v] = i;  // Remember which edge we used
@@ -138,11 +141,12 @@ void runProblem2() {
         }
     }
 
-    // Build path
     int path[MAX_NODES];
-    int pathEdges[MAX_NODES];  // Store edge indices
+    int pathEdges[MAX_NODES];  
     int pathLen = 0;
-    for (int at = target; at != -1; at = prev[at]) {
+
+    for (int at = target; at != -1; at = prev[at]) 
+    {
         path[pathLen] = at;
         pathEdges[pathLen] = prevEdge[at];
         pathLen++;
@@ -155,7 +159,6 @@ void runProblem2() {
 
     printf("\nCheapest path found with cost: ৳%.2f\n\n", dist[target]);
 
-    // Print details using the stored edge information
     printProblem2DetailsWithEdges(path, pathEdges, pathLen, source, target, srcLat, srcLon, destLat, destLon);
 
     exportPathToKML(path, pathLen, "route_problem2.kml");

@@ -16,12 +16,6 @@ int main() {
     parseBusCSV("Routemap-BikolpoBus.csv", MODE_BIKOLPO);
     parseBusCSV("Routemap-UttaraBus.csv", MODE_UTTARA);
 
-    if (numNodes == 0) 
-    {
-        printf("No nodes loaded. Please check your CSV file.\n");
-        return 1;
-    }
-
     while (1) 
     {
         printf("\n-------Mr Efficient--------\n");

@@ -18,7 +18,7 @@ void printProblem4DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
     double totalTravelTime = 0.0;  // in minutes
     double currentTime = startTimeMin;
     
-    char timeBuffer[32];
+    char timeBuffer[32];                // what is this for you may ask. I do not know
 
     printf("\nProblem No: 4\n");
     printf("Source: (%.6f, %.6f)\n", srcLon, srcLat);
@@ -27,14 +27,12 @@ void printProblem4DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
     printf("Start Time: %s\n", timeBuffer);
     printf("\n");
 
-    // If source is not exactly on a node, show walking segment
-    if (fabs(nodes[source].lat - srcLat) > 1e-6 || 
-        fabs(nodes[source].lon - srcLon) > 1e-6) {
+    if (fabs(nodes[source].lat - srcLat) > 1e-6 || fabs(nodes[source].lon - srcLon) > 1e-6) {
         double walkDist = haversineDistance(srcLat, srcLon, 
                                            nodes[source].lat, nodes[source].lon);
         double walkTime = (walkDist / WALK_SPEED_KMH) * 60.0;
         
-        formatTime((int)currentTime, timeBuffer, sizeof(timeBuffer));
+        formatTime((int)currentTime, timeBuffer, sizeof(timeBuffer));           // Ahh its for time format
         printf("[%s] Walk from Source (%.6f, %.6f) to %s (%.6f, %.6f), Distance: %.3f km, Time: %.1f min, Cost: ৳0.00\n",
                timeBuffer, srcLon, srcLat, nodes[source].name, nodes[source].lon, nodes[source].lat, 
                walkDist, walkTime);
@@ -43,12 +41,11 @@ void printProblem4DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
         currentTime += walkTime;
     }
 
-    // Track previous mode to detect mode switches
-    Mode prevMode = MODE_CAR;  // Default: assume starting by car
+    Mode prevMode = MODE_CAR; 
     int isFirstSegment = 1;
 
-    // Print each segment using the stored edge information
-    for (int i = pathLen - 1; i > 0; i--) {
+    for (int i = pathLen - 1; i > 0; i--)       // We print the segments using the stored edge info
+    {
         int from = path[i];
         int to = path[i - 1];
         int edgeIdx = pathEdges[i - 1];
@@ -56,23 +53,27 @@ void printProblem4DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
         double distSeg = 0;
         Mode edgeMode = MODE_CAR;
         
-        if (edgeIdx >= 0 && edgeIdx < numEdges) {
+        if (edgeIdx >= 0 && edgeIdx < numEdges) 
+        {
             distSeg = edges[edgeIdx].distance;
             edgeMode = edges[edgeIdx].mode;
         }
 
-        // Only wait when BOARDING a new scheduled service (mode switch or first boarding)
         int needsWait = 0;
-        if (edgeMode != MODE_CAR && edgeMode != MODE_WALK) {
-            // Need to wait if: first segment on this mode, or switching from a different mode
-            if (isFirstSegment || edgeMode != prevMode) {
+        if (edgeMode != MODE_CAR && edgeMode != MODE_WALK) 
+        {
+            if (isFirstSegment || edgeMode != prevMode)         // Need to wait if: first segment on this mode, or switching from a different mode
+            {
                 needsWait = 1;
             }
         }
 
-        if (needsWait) {
+        if (needsWait) 
+        {
             double waitTime = getWaitingTime((int)currentTime, edgeMode);
-            if (waitTime > 0 && waitTime < INF) {
+
+            if (waitTime > 0 && waitTime < INF) 
+            {
                 formatTime((int)currentTime, timeBuffer, sizeof(timeBuffer));
                 printf("[%s] Wait for %s: %.0f minutes\n", timeBuffer, getModeName(edgeMode), waitTime);
                 currentTime += waitTime;
@@ -104,9 +105,8 @@ void printProblem4DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
         isFirstSegment = 0;
     }
 
-    // If destination is not exactly on a node, show walking segment
-    if (fabs(nodes[target].lat - destLat) > 1e-6 || 
-        fabs(nodes[target].lon - destLon) > 1e-6) {
+    if (fabs(nodes[target].lat - destLat) > 1e-6 || fabs(nodes[target].lon - destLon) > 1e-6) 
+    {
         double walkDist = haversineDistance(nodes[target].lat, nodes[target].lon,
                                            destLat, destLon);
         double walkTime = (walkDist / WALK_SPEED_KMH) * 60.0;
@@ -138,23 +138,24 @@ void runProblem4() {
     printf("Enter destination latitude and longitude: ");
     scanf("%lf %lf", &destLat, &destLon);
     
-    // Clear input buffer
-    while (getchar() != '\n');
+    while (getchar() != '\n');          // Cleaning the input buffer else it produces garbage
     
-    printf("Enter starting time (e.g., '5:43 PM' or '9:30 AM'): ");
+    printf("Enter starting time (AM or PM please): ");
     fgets(timeInput, sizeof(timeInput), stdin);
     timeInput[strcspn(timeInput, "\n")] = 0;
     
     startTimeMin = parseTime(timeInput);
-    if (startTimeMin < 0) {
-        printf("Invalid time format\n");
+    if (startTimeMin < 0) 
+    {
+        printf("e.g 9:30 AM\n");
         return;
     }
 
     int source = findNearestNode(srcLat, srcLon);
     int target = findNearestNode(destLat, destLon);
 
-    if (source == -1 || target == -1) {
+    if (source == -1 || target == -1) 
+    {
         printf("Error: Could not find nodes\n");
         return;
     }
@@ -163,10 +164,10 @@ void runProblem4() {
     printf("Source Node: %s (%.6f, %.6f)\n", nodes[source].name, nodes[source].lat, nodes[source].lon);
     printf("Target Node: %s (%.6f, %.6f)\n", nodes[target].name, nodes[target].lat, nodes[target].lon);
 
-    // Dijkstra initialization - optimizing for COST with time constraints
-    for (int i = 0; i < numNodes; i++) {
+    for (int i = 0; i < numNodes; i++) 
+    {
         dist[i] = INF;
-        prev[i] = -1;
+        prev[i] = -1;                   // I am just copy pasting the same code
         prevEdge[i] = -1;
         visited[i] = 0;
         arrivalTime[i] = INF;
@@ -179,13 +180,15 @@ void runProblem4() {
     double bikolpoRate = 7.0;
     double uttaraRate = 10.0;
 
-    // Dijkstra's algorithm - optimizing for cost with time tracking
-    for (int count = 0; count < numNodes; count++) {
+    for (int count = 0; count < numNodes; count++) 
+    {
         int u = -1;
-        double minCost = INF;
+        double minCost = INF;               // Cpp is good but C is life
 
-        for (int i = 0; i < numNodes; i++) {
-            if (!visited[i] && dist[i] < minCost) {
+        for (int i = 0; i < numNodes; i++) 
+        {
+            if (!visited[i] && dist[i] < minCost) 
+            {
                 minCost = dist[i];
                 u = i;
             }
@@ -195,13 +198,13 @@ void runProblem4() {
 
         visited[u] = 1;
 
-        // Determine the mode used to ARRIVE at node u
-        Mode arrivalMode = MODE_CAR;  // default for source
-        if (prevEdge[u] >= 0 && prevEdge[u] < numEdges) {
+        Mode arrivalMode = MODE_CAR;  
+
+        if (prevEdge[u] >= 0 && prevEdge[u] < numEdges) 
+        {
             arrivalMode = edges[prevEdge[u]].mode;
         }
 
-        // Relax edges
         for (int i = 0; i < numEdges; i++) {
             if (edges[i].from == u) {
                 if (edges[i].mode != MODE_CAR && edges[i].mode != MODE_METRO && 
@@ -211,25 +214,23 @@ void runProblem4() {
                 
                 int v = edges[i].to;
                 
-                // Only apply waiting time when BOARDING (switching modes or first boarding)
                 double waitTime = 0.0;
-                if (edges[i].mode != MODE_CAR && edges[i].mode != MODE_WALK) {
-                    // Need to wait only if we're switching TO this scheduled mode
-                    // (not if we're already riding it)
-                    if (edges[i].mode != arrivalMode || u == source) {
+                if (edges[i].mode != MODE_CAR && edges[i].mode != MODE_WALK) 
+                {
+                    if (edges[i].mode != arrivalMode || u == source) 
+                    {
                         waitTime = getWaitingTime((int)arrivalTime[u], edges[i].mode);
-                        if (waitTime >= INF) {
-                            continue;  // Service not available
+                        if (waitTime >= INF) 
+                        {
+                            continue;  
                         }
                     }
-                    // else: continuing on same vehicle, no wait
+                    // else continuing on same vehicle, no wait
                 }
                 
-                // Calculate travel time
                 double travelTime = (edges[i].distance / VEHICLE_SPEED_KMH) * 60.0;
                 double newArrivalTime = arrivalTime[u] + waitTime + travelTime;
                 
-                // Get cost rate
                 double rate = carRate;
                 if (edges[i].mode == MODE_METRO) rate = metroRate;
                 else if (edges[i].mode == MODE_BIKOLPO) rate = bikolpoRate;
@@ -238,7 +239,8 @@ void runProblem4() {
                 double edgeCost = edges[i].distance * rate;
                 double newCost = dist[u] + edgeCost;
                 
-                if (newCost < dist[v]) {
+                if (newCost < dist[v]) 
+                {
                     dist[v] = newCost;
                     prev[v] = u;
                     prevEdge[v] = i;
@@ -248,17 +250,18 @@ void runProblem4() {
         }
     }
 
-    // Build path
     int path[MAX_NODES];
     int pathEdges[MAX_NODES];
     int pathLen = 0;
-    for (int at = target; at != -1; at = prev[at]) {
+    for (int at = target; at != -1; at = prev[at]) 
+    {
         path[pathLen] = at;
         pathEdges[pathLen] = prevEdge[at];
         pathLen++;
     }
 
-    if (pathLen == 1 || dist[target] >= INF) {
+    if (pathLen == 1 || dist[target] >= INF) 
+    {
         printf("No path found between the selected nodes.\n");
         return;
     }

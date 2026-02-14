@@ -18,18 +18,17 @@ void printProblem3DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
     printf("Destination: (%.6f, %.6f)\n", destLon, destLat);
     printf("\n");
 
-    // If source is not exactly on a node, show walking segment
-    if (fabs(nodes[source].lat - srcLat) > 1e-6 || 
-        fabs(nodes[source].lon - srcLon) > 1e-6) {
-        double walkDist = haversineDistance(srcLat, srcLon, 
-                                           nodes[source].lat, nodes[source].lon);
+    if (fabs(nodes[source].lat - srcLat) > 1e-6 || fabs(nodes[source].lon - srcLon) > 1e-6) 
+    {
+        double walkDist = haversineDistance(srcLat, srcLon, nodes[source].lat, nodes[source].lon);
         printf("Walk from Source (%.6f, %.6f) to %s (%.6f, %.6f), Distance: %.3f km, Cost: ৳0.00\n",
                srcLon, srcLat, nodes[source].name, nodes[source].lon, nodes[source].lat, walkDist);
+
         totalDistance += walkDist;
     }
 
-    // Print each segment using the stored edge information
-    for (int i = pathLen - 1; i > 0; i--) {
+    for (int i = pathLen - 1; i > 0; i--) 
+    {
         int from = path[i];
         int to = path[i - 1];
         int edgeIdx = pathEdges[i - 1];
@@ -37,12 +36,14 @@ void printProblem3DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
         double distSeg = 0;
         Mode edgeMode = MODE_CAR;
         
-        if (edgeIdx >= 0 && edgeIdx < numEdges) {
+        if (edgeIdx >= 0 && edgeIdx < numEdges) 
+        {
             distSeg = edges[edgeIdx].distance;
             edgeMode = edges[edgeIdx].mode;
         }
 
         double rate = carRate;
+
         if (edgeMode == MODE_METRO) rate = metroRate;
         else if (edgeMode == MODE_BIKOLPO) rate = bikolpoRate;
         else if (edgeMode == MODE_UTTARA) rate = uttaraRate;
@@ -58,13 +59,12 @@ void printProblem3DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
                distSeg, costSeg);
     }
 
-    // If destination is not exactly on a node, show walking segment
-    if (fabs(nodes[target].lat - destLat) > 1e-6 || 
-        fabs(nodes[target].lon - destLon) > 1e-6) {
-        double walkDist = haversineDistance(nodes[target].lat, nodes[target].lon,
-                                           destLat, destLon);
+    if (fabs(nodes[target].lat - destLat) > 1e-6 || fabs(nodes[target].lon - destLon) > 1e-6) 
+    {
+        double walkDist = haversineDistance(nodes[target].lat, nodes[target].lon, destLat, destLon);
         printf("Walk from %s (%.6f, %.6f) to Destination (%.6f, %.6f), Distance: %.3f km, Cost: ৳0.00\n",
                nodes[target].name, nodes[target].lon, nodes[target].lat, destLon, destLat, walkDist);
+
         totalDistance += walkDist;
     }
 
@@ -73,6 +73,7 @@ void printProblem3DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
 }
 
 void runProblem3() {
+
     double srcLat, srcLon, destLat, destLon;
 
     printf("Enter source latitude and longitude: ");
@@ -93,7 +94,6 @@ void runProblem3() {
     printf("Source Node: %s (%.6f, %.6f)\n", nodes[source].name, nodes[source].lat, nodes[source].lon);
     printf("Target Node: %s (%.6f, %.6f)\n", nodes[target].name, nodes[target].lat, nodes[target].lon);
 
-    // Dijkstra initialization - optimizing for COST
     for (int i = 0; i < numNodes; i++) {
         dist[i] = INF;
         prev[i] = -1;
@@ -107,13 +107,15 @@ void runProblem3() {
     double bikolpoRate = 7.0;
     double uttaraRate = 10.0;
 
-    // Dijkstra's algorithm - optimizing for cost
-    for (int count = 0; count < numNodes; count++) {
+    for (int count = 0; count < numNodes; count++) 
+    {
         int u = -1;
-        double minCost = INF;
+        double minCost = INF;               // I should switch to cpp
 
-        for (int i = 0; i < numNodes; i++) {
-            if (!visited[i] && dist[i] < minCost) {
+        for (int i = 0; i < numNodes; i++) 
+        {
+            if (!visited[i] && dist[i] < minCost) 
+            {
                 minCost = dist[i];
                 u = i;
             }
@@ -123,10 +125,9 @@ void runProblem3() {
 
         visited[u] = 1;
 
-        // Relax edges - considering car, metro, and buses
         for (int i = 0; i < numEdges; i++) {
             if (edges[i].from == u) {
-                // Only consider CAR, METRO, BIKOLPO, and UTTARA modes for Problem 3
+                
                 if (edges[i].mode != MODE_CAR && edges[i].mode != MODE_METRO && 
                     edges[i].mode != MODE_BIKOLPO && edges[i].mode != MODE_UTTARA) {
                     continue;
@@ -141,7 +142,8 @@ void runProblem3() {
                 double edgeCost = edges[i].distance * rate;
                 double newCost = dist[u] + edgeCost;
                 
-                if (newCost < dist[v]) {
+                if (newCost < dist[v]) 
+                {
                     dist[v] = newCost;
                     prev[v] = u;
                     prevEdge[v] = i;
@@ -150,11 +152,12 @@ void runProblem3() {
         }
     }
 
-    // Build path
     int path[MAX_NODES];
     int pathEdges[MAX_NODES];
     int pathLen = 0;
-    for (int at = target; at != -1; at = prev[at]) {
+
+    for (int at = target; at != -1; at = prev[at]) 
+    {
         path[pathLen] = at;
         pathEdges[pathLen] = prevEdge[at];
         pathLen++;
