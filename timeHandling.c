@@ -7,7 +7,7 @@
 double arrivalTime[MAX_NODES];
 
 int parseTime(const char* timeStr) {
-    // Parse time in format "HH:MM AM/PM" or "H:MM AM/PM"
+
     int hour, minute;
     char period[3];
     
@@ -27,10 +27,10 @@ int parseTime(const char* timeStr) {
         return -1;
     }
     
-    // Convert to minutes from midnight
     int totalMinutes = hour * 60 + minute;
     
-    if (totalMinutes < 0 || totalMinutes >= 24 * 60) {
+    if (totalMinutes < 0 || totalMinutes >= 24 * 60) 
+    {
         printf("Invalid time\n");
         return -1;
     }
@@ -38,8 +38,8 @@ int parseTime(const char* timeStr) {
     return totalMinutes;
 }
 
-// Add function to format time from minutes
 void formatTime(int minutes, char* buffer, int bufferSize) {
+
     int hour = (minutes / 60) % 24;
     int min = minutes % 60;
     int displayHour = hour;
@@ -54,26 +54,24 @@ void formatTime(int minutes, char* buffer, int bufferSize) {
     snprintf(buffer, bufferSize, "%d:%02d %s", displayHour, min, period);
 }
 
-// Add function to calculate waiting time for next scheduled service
 double getWaitingTime(int currentTimeMin, Mode mode) {
-    // Cars don't need to wait
-    if (mode == MODE_CAR || mode == MODE_WALK) {
+    
+    if (mode == MODE_CAR || mode == MODE_WALK) 
+    {
         return 0.0;
     }
     
-    // Check if service is running
-    if (currentTimeMin < SCHEDULE_START_MIN || currentTimeMin >= SCHEDULE_END_MIN) {
-        // Service not available
+    if (currentTimeMin < SCHEDULE_START_MIN || currentTimeMin >= SCHEDULE_END_MIN) 
+    {
         return INF;
     }
     
-    // Calculate minutes since service started today
     int minutesSinceStart = currentTimeMin - SCHEDULE_START_MIN;
     
-    // Calculate time to next departure
     int minutesToNext = SCHEDULE_INTERVAL_MIN - (minutesSinceStart % SCHEDULE_INTERVAL_MIN);
-    if (minutesToNext == SCHEDULE_INTERVAL_MIN) {
-        minutesToNext = 0;  // Service available now
+    if (minutesToNext == SCHEDULE_INTERVAL_MIN) 
+    {
+        minutesToNext = 0;  
     }
     
     return (double)minutesToNext;
