@@ -1,0 +1,233 @@
+
+-------Mr Efficient--------
+[1] Shortest Car Route [Problem 1]
+[2] Cheapest Route(Car and Metro) [Problem 2]
+[3] Cheapest Route(Car, Metro and Bus) [Problem 3]
+[4] Cheapest Route with Time Schedule [Problem 4]
+[5] Fastest Route with Time Schedule [Problem 5]
+[6] Cheapest Route with Deadline [Problem 6]
+[7] Quit
+-----------------------------
+Enter Choice: -----------------------------
+Enter source latitude and longitude: Enter destination latitude and longitude: 
+Using nearest roadmap nodes:
+Source Node: Cantonment (23.834145, 90.363833)
+Target Node: Node0 (23.855136, 90.404772)
+
+Shortest path found with distance: 18.910 km
+
+
+Problem No: 1
+Source: (90.363833, 23.834145)
+Destination: (90.404772, 23.855136)
+
+Ride Car from (90.363833, 23.834145) to (90.363832, 23.833879), Distance: 0.030 km, Cost: ৳0.59
+Ride Car from (90.363832, 23.833879) to (90.363860, 23.833543), Distance: 0.037 km, Cost: ৳0.75
+Ride Car from (90.363860, 23.833543) to (90.363853, 23.832228), Distance: 0.146 km, Cost: ৳2.92
+Ride Car from (90.363853, 23.832228) to (90.363855, 23.832081), Distance: 0.016 km, Cost: ৳0.33
+Ride Car from (90.363855, 23.832081) to (90.363846, 23.831827), Distance: 0.025 km, Cost: ৳0.51
+Ride Car from (90.363846, 23.831827) to (90.363839, 23.831643), Distance: 0.020 km, Cost: ৳0.41
+Ride Car from (90.363839, 23.831643) to (90.363829, 23.831451), Distance: 0.021 km, Cost: ৳0.43
+Ride Car from (90.363829, 23.831451) to (90.364156, 23.829362), Distance: 0.235 km, Cost: ৳4.69
+Ride Car from (90.364156, 23.829362) to (90.365272, 23.829379), Distance: 0.106 km, Cost: ৳2.13
+Ride Car from (90.365272, 23.829379) to (90.365674, 23.829381), Distance: 0.041 km, Cost: ৳0.82
+Ride Car from (90.365674, 23.829381) to (90.365775, 23.828889), Distance: 0.056 km, Cost: ৳1.11
+Ride Car from (90.365775, 23.828889) to (90.365844, 23.828526), Distance: 0.034 km, Cost: ৳0.69
+Ride Car from (90.365844, 23.828526) to (90.365913, 23.828166), Distance: 0.041 km, Cost: ৳0.81
+Ride Car from (90.365913, 23.828166) to (90.365973, 23.827826), Distance: 0.032 km, Cost: ৳0.64
+Ride Car from (90.365973, 23.827826) to (90.366014, 23.827609), Distance: 0.024 km, Cost: ৳0.49
+Ride Car from (90.366014, 23.827609) to (90.366045, 23.827463), Distance: 0.017 km, Cost: ৳0.33
+Ride Car from (90.366045, 23.827463) to (90.366070, 23.827057), Distance: 0.045 km, Cost: ৳0.90
+Ride Car from (90.366070, 23.827057) to (90.366195, 23.826668), Distance: 0.045 km, Cost: ৳0.90
+Ride Car from (90.366195, 23.826668) to (90.366219, 23.826538), Distance: 0.015 km, Cost: ৳0.29
+Ride Car from (90.366219, 23.826538) to (90.366259, 23.826316), Distance: 0.025 km, Cost: ৳0.50
+Ride Car from (90.366259, 23.826316) to (90.366312, 23.826014), Distance: 0.034 km, Cost: ৳0.68
+Ride Car from (90.366312, 23.826014) to (90.366372, 23.825521), Distance: 0.047 km, Cost: ৳0.94
+Ride Car from (90.366372, 23.825521) to (90.366455, 23.825139), Distance: 0.043 km, Cost: ৳0.87
+Ride Car from (90.366455, 23.825139) to (90.366530, 23.824769), Distance: 0.031 km, Cost: ৳0.62
+Ride Car from (90.366530, 23.824769) to (90.366602, 23.824409), Distance: 0.041 km, Cost: ৳0.81
+Ride Car from (90.366602, 23.824409) to (90.366989, 23.824474), Distance: 0.040 km, Cost: ৳0.80
+Ride Car from (90.366989, 23.824474) to (90.367280, 23.823090), Distance: 0.157 km, Cost: ৳3.13
+Ride Car from (90.367280, 23.823090) to (90.367521, 23.823127), Distance: 0.025 km, Cost: ৳0.50
+Ride Car from (90.367521, 23.823127) to (90.367635, 23.822597), Distance: 0.057 km, Cost: ৳1.13
+Ride Car from (90.367635, 23.822597) to (90.367700, 23.822276), Distance: 0.036 km, Cost: ৳0.73
+Ride Car from (90.367700, 23.822276) to (90.367736, 23.822085), Distance: 0.022 km, Cost: ৳0.43
+Ride Car from (90.367736, 23.822085) to (90.367759, 23.821970), Distance: 0.013 km, Cost: ৳0.26
+Ride Car from (90.367759, 23.821970) to (90.367835, 23.821579), Distance: 0.038 km, Cost: ৳0.75
+Ride Car from (90.367835, 23.821579) to (90.367885, 23.821331), Distance: 0.028 km, Cost: ৳0.56
+Ride Car from (90.367885, 23.821331) to (90.367996, 23.820722), Distance: 0.066 km, Cost: ৳1.32
+Ride Car from (90.367996, 23.820722) to (90.368170, 23.820746), Distance: 0.018 km, Cost: ৳0.36
+Ride Car from (90.368170, 23.820746) to (90.368308, 23.820232), Distance: 0.050 km, Cost: ৳1.01
+Ride Car from (90.368308, 23.820232) to (90.368378, 23.819930), Distance: 0.034 km, Cost: ৳0.69
+Ride Car from (90.368378, 23.819930) to (90.368402, 23.819824), Distance: 0.012 km, Cost: ৳0.24
+Ride Car from (90.368402, 23.819824) to (90.368483, 23.819519), Distance: 0.035 km, Cost: ৳0.70
+Ride Car from (90.368483, 23.819519) to (90.368521, 23.819371), Distance: 0.017 km, Cost: ৳0.34
+Ride Car from (90.368521, 23.819371) to (90.368578, 23.819133), Distance: 0.027 km, Cost: ৳0.54
+Ride Car from (90.368578, 23.819133) to (90.368695, 23.818714), Distance: 0.048 km, Cost: ৳0.96
+Ride Car from (90.368695, 23.818714) to (90.368757, 23.818512), Distance: 0.017 km, Cost: ৳0.34
+Ride Car from (90.368757, 23.818512) to (90.368823, 23.818284), Distance: 0.026 km, Cost: ৳0.52
+Ride Car from (90.368823, 23.818284) to (90.368854, 23.818174), Distance: 0.013 km, Cost: ৳0.25
+Ride Car from (90.368854, 23.818174) to (90.368934, 23.817886), Distance: 0.033 km, Cost: ৳0.66
+Ride Car from (90.368934, 23.817886) to (90.368961, 23.817784), Distance: 0.012 km, Cost: ৳0.23
+Ride Car from (90.368961, 23.817784) to (90.369030, 23.817519), Distance: 0.030 km, Cost: ৳0.61
+Ride Car from (90.369030, 23.817519) to (90.369065, 23.817389), Distance: 0.015 km, Cost: ৳0.30
+Ride Car from (90.369065, 23.817389) to (90.369118, 23.817196), Distance: 0.022 km, Cost: ৳0.44
+Ride Car from (90.369118, 23.817196) to (90.369193, 23.816903), Distance: 0.033 km, Cost: ৳0.67
+Ride Car from (90.369193, 23.816903) to (90.369237, 23.816707), Distance: 0.022 km, Cost: ৳0.44
+Ride Car from (90.369237, 23.816707) to (90.369326, 23.816366), Distance: 0.039 km, Cost: ৳0.78
+Ride Car from (90.369326, 23.816366) to (90.369427, 23.816001), Distance: 0.042 km, Cost: ৳0.84
+Ride Car from (90.369427, 23.816001) to (90.369559, 23.815527), Distance: 0.044 km, Cost: ৳0.89
+Ride Car from (90.369559, 23.815527) to (90.369644, 23.815230), Distance: 0.034 km, Cost: ৳0.68
+Ride Car from (90.369644, 23.815230) to (90.369681, 23.815110), Distance: 0.014 km, Cost: ৳0.28
+Ride Car from (90.369681, 23.815110) to (90.369774, 23.814765), Distance: 0.037 km, Cost: ৳0.74
+Ride Car from (90.369774, 23.814765) to (90.370141, 23.813471), Distance: 0.149 km, Cost: ৳2.97
+Ride Car from (90.370141, 23.813471) to (90.370305, 23.813110), Distance: 0.044 km, Cost: ৳0.87
+Ride Car from (90.370305, 23.813110) to (90.370402, 23.812728), Distance: 0.044 km, Cost: ৳0.87
+Ride Car from (90.370402, 23.812728) to (90.370286, 23.812694), Distance: 0.012 km, Cost: ৳0.25
+Ride Car from (90.370286, 23.812694) to (90.370361, 23.812331), Distance: 0.041 km, Cost: ৳0.82
+Ride Car from (90.370361, 23.812331) to (90.370580, 23.812383), Distance: 0.023 km, Cost: ৳0.46
+Ride Car from (90.370580, 23.812383) to (90.370699, 23.811937), Distance: 0.051 km, Cost: ৳1.02
+Ride Car from (90.370699, 23.811937) to (90.370748, 23.811732), Distance: 0.023 km, Cost: ৳0.47
+Ride Car from (90.370748, 23.811732) to (90.370790, 23.811547), Distance: 0.021 km, Cost: ৳0.42
+Ride Car from (90.370790, 23.811547) to (90.370835, 23.811347), Distance: 0.023 km, Cost: ৳0.45
+Ride Car from (90.370835, 23.811347) to (90.370878, 23.811187), Distance: 0.018 km, Cost: ৳0.37
+Ride Car from (90.370878, 23.811187) to (90.370941, 23.810966), Distance: 0.025 km, Cost: ৳0.51
+Ride Car from (90.370941, 23.810966) to (90.370971, 23.810825), Distance: 0.016 km, Cost: ৳0.32
+Ride Car from (90.370971, 23.810825) to (90.371021, 23.810591), Distance: 0.027 km, Cost: ৳0.53
+Ride Car from (90.371021, 23.810591) to (90.371016, 23.810117), Distance: 0.051 km, Cost: ৳1.02
+Ride Car from (90.371016, 23.810117) to (90.371100, 23.809795), Distance: 0.037 km, Cost: ৳0.74
+Ride Car from (90.371100, 23.809795) to (90.371127, 23.809690), Distance: 0.010 km, Cost: ৳0.19
+Ride Car from (90.371127, 23.809690) to (90.371195, 23.809427), Distance: 0.030 km, Cost: ৳0.60
+Ride Car from (90.371195, 23.809427) to (90.371228, 23.809318), Distance: 0.013 km, Cost: ৳0.25
+Ride Car from (90.371228, 23.809318) to (90.371262, 23.809188), Distance: 0.015 km, Cost: ৳0.30
+Ride Car from (90.371262, 23.809188) to (90.371314, 23.809006), Distance: 0.013 km, Cost: ৳0.27
+Ride Car from (90.371314, 23.809006) to (90.371374, 23.808817), Distance: 0.022 km, Cost: ৳0.44
+Ride Car from (90.371374, 23.808817) to (90.371486, 23.808455), Distance: 0.031 km, Cost: ৳0.63
+Ride Car from (90.371486, 23.808455) to (90.371538, 23.808284), Distance: 0.020 km, Cost: ৳0.39
+Ride Car from (90.371538, 23.808284) to (90.371663, 23.807874), Distance: 0.047 km, Cost: ৳0.95
+Ride Car from (90.371663, 23.807874) to (90.371800, 23.807420), Distance: 0.052 km, Cost: ৳1.05
+Ride Car from (90.371800, 23.807420) to (90.371918, 23.806880), Distance: 0.061 km, Cost: ৳1.22
+Ride Car from (90.371918, 23.806880) to (90.372066, 23.806846), Distance: 0.016 km, Cost: ৳0.31
+Ride Car from (90.372066, 23.806846) to (90.372261, 23.806801), Distance: 0.020 km, Cost: ৳0.41
+Ride Car from (90.372261, 23.806801) to (90.373358, 23.806556), Distance: 0.115 km, Cost: ৳2.30
+Ride Car from (90.373358, 23.806556) to (90.374227, 23.806362), Distance: 0.091 km, Cost: ৳1.82
+Ride Car from (90.374227, 23.806362) to (90.374669, 23.806197), Distance: 0.049 km, Cost: ৳0.97
+Ride Car from (90.374669, 23.806197) to (90.375338, 23.805810), Distance: 0.081 km, Cost: ৳1.61
+Ride Car from (90.375338, 23.805810) to (90.376136, 23.805161), Distance: 0.109 km, Cost: ৳2.17
+Ride Car from (90.376136, 23.805161) to (90.376523, 23.804833), Distance: 0.054 km, Cost: ৳1.07
+Ride Car from (90.376523, 23.804833) to (90.376975, 23.804450), Distance: 0.063 km, Cost: ৳1.25
+Ride Car from (90.376975, 23.804450) to (90.377242, 23.804250), Distance: 0.035 km, Cost: ৳0.70
+Ride Car from (90.377242, 23.804250) to (90.377552, 23.804023), Distance: 0.032 km, Cost: ৳0.63
+Ride Car from (90.377552, 23.804023) to (90.377950, 23.803670), Distance: 0.056 km, Cost: ৳1.13
+Ride Car from (90.377950, 23.803670) to (90.378081, 23.803557), Distance: 0.018 km, Cost: ৳0.37
+Ride Car from (90.378081, 23.803557) to (90.378520, 23.803195), Distance: 0.060 km, Cost: ৳1.20
+Ride Car from (90.378520, 23.803195) to (90.378786, 23.802977), Distance: 0.036 km, Cost: ৳0.73
+Ride Car from (90.378786, 23.802977) to (90.379077, 23.802738), Distance: 0.040 km, Cost: ৳0.80
+Ride Car from (90.379077, 23.802738) to (90.379865, 23.802057), Distance: 0.100 km, Cost: ৳2.00
+Ride Car from (90.379865, 23.802057) to (90.380021, 23.801922), Distance: 0.022 km, Cost: ৳0.44
+Ride Car from (90.380021, 23.801922) to (90.380246, 23.801727), Distance: 0.032 km, Cost: ৳0.63
+Ride Car from (90.380246, 23.801727) to (90.380416, 23.801607), Distance: 0.022 km, Cost: ৳0.44
+Ride Car from (90.380416, 23.801607) to (90.380719, 23.801394), Distance: 0.039 km, Cost: ৳0.78
+Ride Car from (90.380719, 23.801394) to (90.381460, 23.800902), Distance: 0.093 km, Cost: ৳1.86
+Ride Car from (90.381460, 23.800902) to (90.382026, 23.800560), Distance: 0.063 km, Cost: ৳1.27
+Ride Car from (90.382026, 23.800560) to (90.382258, 23.800443), Distance: 0.027 km, Cost: ৳0.54
+Ride Car from (90.382258, 23.800443) to (90.382641, 23.800251), Distance: 0.044 km, Cost: ৳0.89
+Ride Car from (90.382641, 23.800251) to (90.382883, 23.800147), Distance: 0.027 km, Cost: ৳0.54
+Ride Car from (90.382883, 23.800147) to (90.383357, 23.799945), Distance: 0.050 km, Cost: ৳0.99
+Ride Car from (90.383357, 23.799945) to (90.383709, 23.799815), Distance: 0.039 km, Cost: ৳0.77
+Ride Car from (90.383709, 23.799815) to (90.383834, 23.799770), Distance: 0.014 km, Cost: ৳0.27
+Ride Car from (90.383834, 23.799770) to (90.384677, 23.799431), Distance: 0.094 km, Cost: ৳1.87
+Ride Car from (90.384677, 23.799431) to (90.384999, 23.799302), Distance: 0.036 km, Cost: ৳0.72
+Ride Car from (90.384999, 23.799302) to (90.385154, 23.799240), Distance: 0.017 km, Cost: ৳0.34
+Ride Car from (90.385154, 23.799240) to (90.385773, 23.798991), Distance: 0.069 km, Cost: ৳1.38
+Ride Car from (90.385773, 23.798991) to (90.385937, 23.798925), Distance: 0.009 km, Cost: ৳0.18
+Ride Car from (90.385937, 23.798925) to (90.386239, 23.798829), Distance: 0.033 km, Cost: ৳0.65
+Ride Car from (90.386239, 23.798829) to (90.386482, 23.798751), Distance: 0.026 km, Cost: ৳0.52
+Ride Car from (90.386482, 23.798751) to (90.386695, 23.798683), Distance: 0.023 km, Cost: ৳0.46
+Ride Car from (90.386695, 23.798683) to (90.387299, 23.798507), Distance: 0.055 km, Cost: ৳1.10
+Ride Car from (90.387299, 23.798507) to (90.387349, 23.797753), Distance: 0.084 km, Cost: ৳1.68
+Ride Car from (90.387349, 23.797753) to (90.387496, 23.796882), Distance: 0.098 km, Cost: ৳1.96
+Ride Car from (90.387496, 23.796882) to (90.387549, 23.796580), Distance: 0.034 km, Cost: ৳0.68
+Ride Car from (90.387549, 23.796580) to (90.387579, 23.796405), Distance: 0.020 km, Cost: ৳0.39
+Ride Car from (90.387579, 23.796405) to (90.387655, 23.795850), Distance: 0.060 km, Cost: ৳1.19
+Ride Car from (90.387655, 23.795850) to (90.387759, 23.795214), Distance: 0.072 km, Cost: ৳1.43
+Ride Car from (90.387759, 23.795214) to (90.387832, 23.794779), Distance: 0.049 km, Cost: ৳0.98
+Ride Car from (90.387832, 23.794779) to (90.387904, 23.794349), Distance: 0.048 km, Cost: ৳0.97
+Ride Car from (90.387904, 23.794349) to (90.387998, 23.793788), Distance: 0.063 km, Cost: ৳1.26
+Ride Car from (90.387998, 23.793788) to (90.387956, 23.793187), Distance: 0.067 km, Cost: ৳1.34
+Ride Car from (90.387956, 23.793187) to (90.387838, 23.791552), Distance: 0.182 km, Cost: ৳3.64
+Ride Car from (90.387838, 23.791552) to (90.387973, 23.790888), Distance: 0.075 km, Cost: ৳1.50
+Ride Car from (90.387973, 23.790888) to (90.388195, 23.789690), Distance: 0.135 km, Cost: ৳2.70
+Ride Car from (90.388195, 23.789690) to (90.388311, 23.789040), Distance: 0.073 km, Cost: ৳1.46
+Ride Car from (90.388311, 23.789040) to (90.388445, 23.788281), Distance: 0.085 km, Cost: ৳1.71
+Ride Car from (90.388445, 23.788281) to (90.388517, 23.787877), Distance: 0.046 km, Cost: ৳0.91
+Ride Car from (90.388517, 23.787877) to (90.389591, 23.787819), Distance: 0.109 km, Cost: ৳2.19
+Ride Car from (90.389591, 23.787819) to (90.390828, 23.787748), Distance: 0.126 km, Cost: ৳2.52
+Ride Car from (90.390828, 23.787748) to (90.389649, 23.783496), Distance: 0.488 km, Cost: ৳9.76
+Ride Car from (90.389649, 23.783496) to (90.389495, 23.779811), Distance: 0.410 km, Cost: ৳8.20
+Ride Car from (90.389495, 23.779811) to (90.389800, 23.775235), Distance: 0.510 km, Cost: ৳10.20
+Ride Car from (90.389800, 23.775235) to (90.390938, 23.775444), Distance: 0.118 km, Cost: ৳2.36
+Ride Car from (90.390938, 23.775444) to (90.392729, 23.775788), Distance: 0.186 km, Cost: ৳3.72
+Ride Car from (90.392729, 23.775788) to (90.393562, 23.776136), Distance: 0.088 km, Cost: ৳1.77
+Ride Car from (90.393562, 23.776136) to (90.393935, 23.776365), Distance: 0.046 km, Cost: ৳0.91
+Ride Car from (90.393935, 23.776365) to (90.394166, 23.776498), Distance: 0.028 km, Cost: ৳0.56
+Ride Car from (90.394166, 23.776498) to (90.394372, 23.776531), Distance: 0.021 km, Cost: ৳0.43
+Ride Car from (90.394372, 23.776531) to (90.395367, 23.777088), Distance: 0.119 km, Cost: ৳2.37
+Ride Car from (90.395367, 23.777088) to (90.395467, 23.777147), Distance: 0.012 km, Cost: ৳0.24
+Ride Car from (90.395467, 23.777147) to (90.396186, 23.777570), Distance: 0.087 km, Cost: ৳1.74
+Ride Car from (90.396186, 23.777570) to (90.396376, 23.777680), Distance: 0.023 km, Cost: ৳0.46
+Ride Car from (90.396376, 23.777680) to (90.397380, 23.778127), Distance: 0.107 km, Cost: ৳2.13
+Ride Car from (90.397380, 23.778127) to (90.398156, 23.778810), Distance: 0.110 km, Cost: ৳2.19
+Ride Car from (90.398156, 23.778810) to (90.398599, 23.780114), Distance: 0.154 km, Cost: ৳3.08
+Ride Car from (90.398599, 23.780114) to (90.398665, 23.780476), Distance: 0.041 km, Cost: ৳0.82
+Ride Car from (90.398665, 23.780476) to (90.398782, 23.781108), Distance: 0.071 km, Cost: ৳1.43
+Ride Car from (90.398782, 23.781108) to (90.399980, 23.788075), Distance: 0.784 km, Cost: ৳15.68
+Ride Car from (90.399980, 23.788075) to (90.400155, 23.789087), Distance: 0.114 km, Cost: ৳2.28
+Ride Car from (90.400155, 23.789087) to (90.400404, 23.790553), Distance: 0.165 km, Cost: ৳3.30
+Ride Car from (90.400404, 23.790553) to (90.400537, 23.791387), Distance: 0.094 km, Cost: ৳1.87
+Ride Car from (90.400537, 23.791387) to (90.401034, 23.794465), Distance: 0.346 km, Cost: ৳6.92
+Ride Car from (90.401034, 23.794465) to (90.401466, 23.797032), Distance: 0.280 km, Cost: ৳5.61
+Ride Car from (90.401466, 23.797032) to (90.401817, 23.799134), Distance: 0.236 km, Cost: ৳4.73
+Ride Car from (90.401817, 23.799134) to (90.401986, 23.800196), Distance: 0.119 km, Cost: ৳2.39
+Ride Car from (90.401986, 23.800196) to (90.402068, 23.800666), Distance: 0.053 km, Cost: ৳1.06
+Ride Car from (90.402068, 23.800666) to (90.404066, 23.812830), Distance: 1.368 km, Cost: ৳27.36
+Ride Car from (90.404066, 23.812830) to (90.404490, 23.815063), Distance: 0.252 km, Cost: ৳5.04
+Ride Car from (90.404490, 23.815063) to (90.405028, 23.816025), Distance: 0.120 km, Cost: ৳2.40
+Ride Car from (90.405028, 23.816025) to (90.405609, 23.816548), Distance: 0.083 km, Cost: ৳1.66
+Ride Car from (90.405609, 23.816548) to (90.406676, 23.816979), Distance: 0.119 km, Cost: ৳2.37
+Ride Car from (90.406676, 23.816979) to (90.409454, 23.816909), Distance: 0.283 km, Cost: ৳5.65
+Ride Car from (90.409454, 23.816909) to (90.410727, 23.816886), Distance: 0.130 km, Cost: ৳2.59
+Ride Car from (90.410727, 23.816886) to (90.411457, 23.816884), Distance: 0.074 km, Cost: ৳1.49
+Ride Car from (90.411457, 23.816884) to (90.412319, 23.817219), Distance: 0.095 km, Cost: ৳1.91
+Ride Car from (90.412319, 23.817219) to (90.414977, 23.818866), Distance: 0.327 km, Cost: ৳6.53
+Ride Car from (90.414977, 23.818866) to (90.417356, 23.820452), Distance: 0.299 km, Cost: ৳5.99
+Ride Car from (90.417356, 23.820452) to (90.418130, 23.820968), Distance: 0.097 km, Cost: ৳1.95
+Ride Car from (90.418130, 23.820968) to (90.419038, 23.821667), Distance: 0.121 km, Cost: ৳2.41
+Ride Car from (90.419038, 23.821667) to (90.419859, 23.822765), Distance: 0.148 km, Cost: ৳2.96
+Ride Car from (90.419859, 23.822765) to (90.420262, 23.823607), Distance: 0.102 km, Cost: ৳2.04
+Ride Car from (90.420262, 23.823607) to (90.420459, 23.824999), Distance: 0.156 km, Cost: ৳3.12
+Ride Car from (90.420459, 23.824999) to (90.420275, 23.826830), Distance: 0.204 km, Cost: ৳4.09
+Ride Car from (90.420275, 23.826830) to (90.419952, 23.828786), Distance: 0.220 km, Cost: ৳4.40
+Ride Car from (90.419952, 23.828786) to (90.419250, 23.832955), Distance: 0.469 km, Cost: ৳9.38
+Ride Car from (90.419250, 23.832955) to (90.418794, 23.835634), Distance: 0.301 km, Cost: ৳6.03
+Ride Car from (90.418794, 23.835634) to (90.418367, 23.837227), Distance: 0.182 km, Cost: ৳3.65
+Ride Car from (90.418367, 23.837227) to (90.417852, 23.838712), Distance: 0.173 km, Cost: ৳3.46
+Ride Car from (90.417852, 23.838712) to (90.416504, 23.840885), Distance: 0.278 km, Cost: ৳5.56
+Ride Car from (90.416504, 23.840885) to (90.405082, 23.854769), Distance: 1.932 km, Cost: ৳38.64
+Ride Car from (90.405082, 23.854769) to (90.404976, 23.854894), Distance: 0.018 km, Cost: ৳0.35
+Ride Car from (90.404976, 23.854894) to (90.404772, 23.855136), Distance: 0.034 km, Cost: ৳0.68
+
+Total Distance: 18.910 km
+Total Cost: ৳378.21
+Exported path to route.kml
+
+-------Mr Efficient--------
+[1] Shortest Car Route [Problem 1]
+[2] Cheapest Route(Car and Metro) [Problem 2]
+[3] Cheapest Route(Car, Metro and Bus) [Problem 3]
+[4] Cheapest Route with Time Schedule [Problem 4]
+[5] Fastest Route with Time Schedule [Problem 5]
+[6] Cheapest Route with Deadline [Problem 6]
+[7] Quit
+-----------------------------
+Enter Choice: -----------------------------

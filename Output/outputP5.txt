@@ -1,0 +1,270 @@
+
+-------Mr Efficient--------
+[1] Shortest Car Route [Problem 1]
+[2] Cheapest Route(Car and Metro) [Problem 2]
+[3] Cheapest Route(Car, Metro and Bus) [Problem 3]
+[4] Cheapest Route with Time Schedule [Problem 4]
+[5] Fastest Route with Time Schedule [Problem 5]
+[6] Cheapest Route with Deadline [Problem 6]
+[7] Quit
+-----------------------------
+Enter Choice: -----------------------------
+Enter source latitude and longitude: Enter destination latitude and longitude: Enter starting time (AM or PM please): 
+Using nearest nodes:
+Source Node: Node37887 (23.875956, 90.400229)
+Target Node: Node18810 (23.835966, 90.367982)
+
+Fastest path found with travel time: 130.9 minutes (2.2 hours)
+
+
+Problem No: 5
+Source: (90.400229, 23.875956)
+Destination: (90.367982, 23.835966)
+Start Time: 9:30 AM
+
+[9:30 AM] Ride Car from Node37887 (90.400229, 23.875956) to Node37886 (90.400016, 23.874631), Distance: 0.149 km, Time: 0.9 min, Cost: ৳2.98
+[9:30 AM] Ride Car from Node37886 (90.400016, 23.874631) to Node36927 (90.400324, 23.874642), Distance: 0.031 km, Time: 0.2 min, Cost: ৳0.63
+[9:31 AM] Ride Car from Node36927 (90.400324, 23.874642) to Node36928 (90.400419, 23.872993), Distance: 0.184 km, Time: 1.1 min, Cost: ৳3.67
+[9:32 AM] Ride Car from Node36928 (90.400419, 23.872993) to Node36929 (90.400314, 23.871421), Distance: 0.175 km, Time: 1.1 min, Cost: ৳3.50
+[9:33 AM] Ride Car from Node36929 (90.400314, 23.871421) to Node36932 (90.400532, 23.871418), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.44
+[9:33 AM] Ride Car from Node36932 (90.400532, 23.871418) to Node37644 (90.400502, 23.871021), Distance: 0.044 km, Time: 0.3 min, Cost: ৳0.88
+[9:33 AM] Ride Car from Node37644 (90.400502, 23.871021) to Node37647 (90.400402, 23.869504), Distance: 0.169 km, Time: 1.0 min, Cost: ৳3.38
+[9:34 AM] Ride Car from Node37647 (90.400402, 23.869504) to Azampur (90.400331, 23.867923), Distance: 0.176 km, Time: 1.1 min, Cost: ৳3.52
+[9:35 AM] Ride Car from Azampur (90.400331, 23.867923) to Node37596 (90.400158, 23.864556), Distance: 0.375 km, Time: 2.2 min, Cost: ৳7.50
+[9:37 AM] Ride Car from Node37596 (90.400158, 23.864556) to Node37330 (90.400135, 23.864170), Distance: 0.043 km, Time: 0.3 min, Cost: ৳0.86
+[9:38 AM] Ride Car from Node37330 (90.400135, 23.864170) to Node37329 (90.400028, 23.862702), Distance: 0.164 km, Time: 1.0 min, Cost: ৳3.27
+[9:39 AM] Ride Car from Node37329 (90.400028, 23.862702) to Node37544 (90.400072, 23.861872), Distance: 0.092 km, Time: 0.6 min, Cost: ৳1.85
+[9:39 AM] Ride Car from Node37544 (90.400072, 23.861872) to Rajlokkhi (90.400394, 23.860737), Distance: 0.130 km, Time: 0.8 min, Cost: ৳2.61
+[9:40 AM] Ride Car from Rajlokkhi (90.400394, 23.860737) to Node37506 (90.401095, 23.859635), Distance: 0.142 km, Time: 0.9 min, Cost: ৳2.84
+[9:41 AM] Ride Car from Node37506 (90.401095, 23.859635) to Node0 (90.404772, 23.855136), Distance: 0.625 km, Time: 3.7 min, Cost: ৳12.49
+[9:45 AM] Ride Car from Node0 (90.404772, 23.855136) to Node183 (90.404976, 23.854894), Distance: 0.034 km, Time: 0.2 min, Cost: ৳0.68
+[9:45 AM] Ride Car from Node183 (90.404976, 23.854894) to Node31494 (90.405082, 23.854769), Distance: 0.018 km, Time: 0.1 min, Cost: ৳0.35
+[9:45 AM] Ride Car from Node31494 (90.405082, 23.854769) to Node31495 (90.416504, 23.840885), Distance: 1.932 km, Time: 11.6 min, Cost: ৳38.64
+[9:57 AM] Ride Car from Node31495 (90.416504, 23.840885) to Node31496 (90.417852, 23.838712), Distance: 0.278 km, Time: 1.7 min, Cost: ৳5.56
+[9:58 AM] Ride Car from Node31496 (90.417852, 23.838712) to Node36497 (90.418367, 23.837227), Distance: 0.173 km, Time: 1.0 min, Cost: ৳3.46
+[9:59 AM] Ride Car from Node36497 (90.418367, 23.837227) to Node36498 (90.418794, 23.835634), Distance: 0.182 km, Time: 1.1 min, Cost: ৳3.65
+[10:00 AM] Ride Car from Node36498 (90.418794, 23.835634) to Node36247 (90.419250, 23.832955), Distance: 0.301 km, Time: 1.8 min, Cost: ৳6.03
+[10:02 AM] Ride Car from Node36247 (90.419250, 23.832955) to Khilkhet (90.419952, 23.828786), Distance: 0.469 km, Time: 2.8 min, Cost: ৳9.38
+[10:05 AM] Ride Car from Khilkhet (90.419952, 23.828786) to Node36378 (90.420275, 23.826830), Distance: 0.220 km, Time: 1.3 min, Cost: ৳4.40
+[10:06 AM] Ride Car from Node36378 (90.420275, 23.826830) to Node36379 (90.420459, 23.824999), Distance: 0.204 km, Time: 1.2 min, Cost: ৳4.09
+[10:07 AM] Ride Car from Node36379 (90.420459, 23.824999) to Node31501 (90.420262, 23.823607), Distance: 0.156 km, Time: 0.9 min, Cost: ৳3.12
+[10:08 AM] Ride Car from Node31501 (90.420262, 23.823607) to Node31502 (90.419859, 23.822765), Distance: 0.102 km, Time: 0.6 min, Cost: ৳2.04
+[10:09 AM] Ride Car from Node31502 (90.419859, 23.822765) to Kuril (90.419038, 23.821667), Distance: 0.148 km, Time: 0.9 min, Cost: ৳2.96
+[10:10 AM] Ride Car from Kuril (90.419038, 23.821667) to Node35553 (90.418130, 23.820968), Distance: 0.121 km, Time: 0.7 min, Cost: ৳2.41
+[10:11 AM] Ride Car from Node35553 (90.418130, 23.820968) to Node35183 (90.417356, 23.820452), Distance: 0.097 km, Time: 0.6 min, Cost: ৳1.95
+[10:11 AM] Ride Car from Node35183 (90.417356, 23.820452) to Shewra (90.414977, 23.818866), Distance: 0.299 km, Time: 1.8 min, Cost: ৳5.99
+[10:13 AM] Ride Car from Shewra (90.414977, 23.818866) to Node35268 (90.412319, 23.817219), Distance: 0.327 km, Time: 2.0 min, Cost: ৳6.53
+[10:15 AM] Ride Car from Node35268 (90.412319, 23.817219) to Node35269 (90.411457, 23.816884), Distance: 0.095 km, Time: 0.6 min, Cost: ৳1.91
+[10:16 AM] Ride Car from Node35269 (90.411457, 23.816884) to Node35270 (90.410727, 23.816886), Distance: 0.074 km, Time: 0.4 min, Cost: ৳1.49
+[10:16 AM] Ride Car from Node35270 (90.410727, 23.816886) to Node31504 (90.409454, 23.816909), Distance: 0.130 km, Time: 0.8 min, Cost: ৳2.59
+[10:17 AM] Ride Car from Node31504 (90.409454, 23.816909) to Node31505 (90.406676, 23.816979), Distance: 0.283 km, Time: 1.7 min, Cost: ৳5.65
+[10:18 AM] Ride Car from Node31505 (90.406676, 23.816979) to Node31506 (90.405609, 23.816548), Distance: 0.119 km, Time: 0.7 min, Cost: ৳2.37
+[10:19 AM] Ride Car from Node31506 (90.405609, 23.816548) to MES BUS Stop (90.405028, 23.816025), Distance: 0.083 km, Time: 0.5 min, Cost: ৳1.66
+[10:20 AM] Ride Car from MES BUS Stop (90.405028, 23.816025) to Node33793 (90.404490, 23.815063), Distance: 0.120 km, Time: 0.7 min, Cost: ৳2.40
+[10:20 AM] Ride Car from Node33793 (90.404490, 23.815063) to Node31634 (90.404066, 23.812830), Distance: 0.252 km, Time: 1.5 min, Cost: ৳5.04
+[10:22 AM] Ride Car from Node31634 (90.404066, 23.812830) to Node31635 (90.402068, 23.800666), Distance: 1.368 km, Time: 8.2 min, Cost: ৳27.36
+[10:30 AM] Ride Car from Node31635 (90.402068, 23.800666) to Node33777 (90.401986, 23.800196), Distance: 0.053 km, Time: 0.3 min, Cost: ৳1.06
+[10:30 AM] Ride Car from Node33777 (90.401986, 23.800196) to Node33599 (90.401817, 23.799134), Distance: 0.119 km, Time: 0.7 min, Cost: ৳2.39
+[10:31 AM] Ride Car from Node33599 (90.401817, 23.799134) to Node33600 (90.401466, 23.797032), Distance: 0.236 km, Time: 1.4 min, Cost: ৳4.73
+[10:33 AM] Ride Car from Node33600 (90.401466, 23.797032) to Banani (90.401034, 23.794465), Distance: 0.280 km, Time: 1.7 min, Cost: ৳5.61
+[10:34 AM] Ride Car from Banani (90.401034, 23.794465) to Node33723 (90.400537, 23.791387), Distance: 0.346 km, Time: 2.1 min, Cost: ৳6.92
+[10:36 AM] Ride Car from Node33723 (90.400537, 23.791387) to Node7824 (90.400404, 23.790553), Distance: 0.094 km, Time: 0.6 min, Cost: ৳1.87
+[10:37 AM] Ride Car from Node7824 (90.400404, 23.790553) to Node7825 (90.400155, 23.789087), Distance: 0.165 km, Time: 1.0 min, Cost: ৳3.30
+[10:38 AM] Ride Car from Node7825 (90.400155, 23.789087) to Node23648 (90.399980, 23.788075), Distance: 0.114 km, Time: 0.7 min, Cost: ৳2.28
+[10:39 AM] Ride Car from Node23648 (90.399980, 23.788075) to Node23649 (90.398782, 23.781108), Distance: 0.784 km, Time: 4.7 min, Cost: ৳15.68
+[10:43 AM] Ride Car from Node23649 (90.398782, 23.781108) to Node23688 (90.398665, 23.780476), Distance: 0.071 km, Time: 0.4 min, Cost: ৳1.43
+[10:44 AM] Ride Car from Node23688 (90.398665, 23.780476) to Node23689 (90.398599, 23.780114), Distance: 0.041 km, Time: 0.2 min, Cost: ৳0.82
+[10:44 AM] Ride Car from Node23689 (90.398599, 23.780114) to Node23706 (90.398156, 23.778810), Distance: 0.154 km, Time: 0.9 min, Cost: ৳3.08
+[10:45 AM] Ride Car from Node23706 (90.398156, 23.778810) to Node23705 (90.397380, 23.778127), Distance: 0.110 km, Time: 0.7 min, Cost: ৳2.19
+[10:46 AM] Ride Car from Node23705 (90.397380, 23.778127) to Node23821 (90.396376, 23.777680), Distance: 0.107 km, Time: 0.6 min, Cost: ৳2.13
+[10:46 AM] Ride Car from Node23821 (90.396376, 23.777680) to Node23658 (90.396186, 23.777570), Distance: 0.023 km, Time: 0.1 min, Cost: ৳0.46
+[10:46 AM] Ride Car from Node23658 (90.396186, 23.777570) to Node23722 (90.395467, 23.777147), Distance: 0.087 km, Time: 0.5 min, Cost: ৳1.74
+[10:47 AM] Ride Car from Node23722 (90.395467, 23.777147) to Node23709 (90.395367, 23.777088), Distance: 0.012 km, Time: 0.1 min, Cost: ৳0.24
+[10:47 AM] Ride Car from Node23709 (90.395367, 23.777088) to Node23708 (90.394372, 23.776531), Distance: 0.119 km, Time: 0.7 min, Cost: ৳2.37
+[10:48 AM] Ride Car from Node23708 (90.394372, 23.776531) to Node23753 (90.394166, 23.776498), Distance: 0.021 km, Time: 0.1 min, Cost: ৳0.43
+[10:48 AM] Ride Car from Node23753 (90.394166, 23.776498) to Node23740 (90.393935, 23.776365), Distance: 0.028 km, Time: 0.2 min, Cost: ৳0.56
+[10:48 AM] Ride Car from Node23740 (90.393935, 23.776365) to Node23704 (90.393562, 23.776136), Distance: 0.046 km, Time: 0.3 min, Cost: ৳0.91
+[10:48 AM] Ride Car from Node23704 (90.393562, 23.776136) to Node23728 (90.392729, 23.775788), Distance: 0.088 km, Time: 0.5 min, Cost: ৳1.77
+[10:49 AM] Ride Car from Node23728 (90.392729, 23.775788) to Jahangir Gate (90.390938, 23.775444), Distance: 0.186 km, Time: 1.1 min, Cost: ৳3.72
+[10:50 AM] Ride Car from Jahangir Gate (90.390938, 23.775444) to Node22146 (90.389800, 23.775235), Distance: 0.118 km, Time: 0.7 min, Cost: ৳2.36
+[10:51 AM] Ride Car from Node22146 (90.389800, 23.775235) to Node22210 (90.389495, 23.779811), Distance: 0.510 km, Time: 3.1 min, Cost: ৳10.20
+[10:54 AM] Ride Car from Node22210 (90.389495, 23.779811) to Node22209 (90.389649, 23.783496), Distance: 0.410 km, Time: 2.5 min, Cost: ৳8.20
+[10:56 AM] Ride Car from Node22209 (90.389649, 23.783496) to Node7844 (90.390828, 23.787748), Distance: 0.488 km, Time: 2.9 min, Cost: ৳9.76
+[10:59 AM] Ride Car from Node7844 (90.390828, 23.787748) to Node22208 (90.389591, 23.787819), Distance: 0.126 km, Time: 0.8 min, Cost: ৳2.52
+[11:00 AM] Ride Car from Node22208 (90.389591, 23.787819) to Node23056 (90.388517, 23.787877), Distance: 0.109 km, Time: 0.7 min, Cost: ৳2.19
+[11:00 AM] Ride Car from Node23056 (90.388517, 23.787877) to Node23055 (90.388445, 23.788281), Distance: 0.046 km, Time: 0.3 min, Cost: ৳0.91
+[11:01 AM] Ride Car from Node23055 (90.388445, 23.788281) to Node7790 (90.388311, 23.789040), Distance: 0.085 km, Time: 0.5 min, Cost: ৳1.71
+[11:01 AM] Ride Car from Node7790 (90.388311, 23.789040) to Node7789 (90.388195, 23.789690), Distance: 0.073 km, Time: 0.4 min, Cost: ৳1.46
+[11:02 AM] Ride Car from Node7789 (90.388195, 23.789690) to Node32517 (90.387973, 23.790888), Distance: 0.135 km, Time: 0.8 min, Cost: ৳2.70
+[11:02 AM] Ride Car from Node32517 (90.387973, 23.790888) to Node32512 (90.387838, 23.791552), Distance: 0.075 km, Time: 0.5 min, Cost: ৳1.50
+[11:03 AM] Ride Car from Node32512 (90.387838, 23.791552) to Node32343 (90.387956, 23.793187), Distance: 0.182 km, Time: 1.1 min, Cost: ৳3.64
+[11:04 AM] Ride Car from Node32343 (90.387956, 23.793187) to Node32342 (90.387998, 23.793788), Distance: 0.067 km, Time: 0.4 min, Cost: ৳1.34
+[11:04 AM] Ride Car from Node32342 (90.387998, 23.793788) to Node32548 (90.387904, 23.794349), Distance: 0.063 km, Time: 0.4 min, Cost: ৳1.26
+[11:05 AM] Ride Car from Node32548 (90.387904, 23.794349) to Node32545 (90.387832, 23.794779), Distance: 0.048 km, Time: 0.3 min, Cost: ৳0.97
+[11:05 AM] Ride Car from Node32545 (90.387832, 23.794779) to Node32543 (90.387759, 23.795214), Distance: 0.049 km, Time: 0.3 min, Cost: ৳0.98
+[11:05 AM] Ride Car from Node32543 (90.387759, 23.795214) to Node32542 (90.387655, 23.795850), Distance: 0.072 km, Time: 0.4 min, Cost: ৳1.43
+[11:06 AM] Ride Car from Node32542 (90.387655, 23.795850) to Node32567 (90.387579, 23.796405), Distance: 0.060 km, Time: 0.4 min, Cost: ৳1.19
+[11:06 AM] Ride Car from Node32567 (90.387579, 23.796405) to Node32566 (90.387549, 23.796580), Distance: 0.020 km, Time: 0.1 min, Cost: ৳0.39
+[11:06 AM] Ride Car from Node32566 (90.387549, 23.796580) to Node32562 (90.387496, 23.796882), Distance: 0.034 km, Time: 0.2 min, Cost: ৳0.68
+[11:06 AM] Ride Car from Node32562 (90.387496, 23.796882) to Node31707 (90.387349, 23.797753), Distance: 0.098 km, Time: 0.6 min, Cost: ৳1.96
+[11:07 AM] Ride Car from Node31707 (90.387349, 23.797753) to Node31706 (90.387299, 23.798507), Distance: 0.084 km, Time: 0.5 min, Cost: ৳1.68
+[11:08 AM] Ride Car from Node31706 (90.387299, 23.798507) to Node32738 (90.386695, 23.798683), Distance: 0.055 km, Time: 0.3 min, Cost: ৳1.10
+[11:08 AM] Ride Car from Node32738 (90.386695, 23.798683) to Node32618 (90.386482, 23.798751), Distance: 0.023 km, Time: 0.1 min, Cost: ৳0.46
+[11:08 AM] Ride Car from Node32618 (90.386482, 23.798751) to Node32617 (90.386239, 23.798829), Distance: 0.026 km, Time: 0.2 min, Cost: ৳0.52
+[11:08 AM] Ride Car from Node32617 (90.386239, 23.798829) to Node32701 (90.385937, 23.798925), Distance: 0.033 km, Time: 0.2 min, Cost: ৳0.65
+[11:08 AM] Ride Car from Node32701 (90.385937, 23.798925) to Node32677 (90.385773, 23.798991), Distance: 0.009 km, Time: 0.1 min, Cost: ৳0.18
+[11:08 AM] Ride Car from Node32677 (90.385773, 23.798991) to Node32674 (90.385154, 23.799240), Distance: 0.069 km, Time: 0.4 min, Cost: ৳1.38
+[11:09 AM] Ride Car from Node32674 (90.385154, 23.799240) to Node32692 (90.384999, 23.799302), Distance: 0.017 km, Time: 0.1 min, Cost: ৳0.34
+[11:09 AM] Ride Car from Node32692 (90.384999, 23.799302) to Node32652 (90.384677, 23.799431), Distance: 0.036 km, Time: 0.2 min, Cost: ৳0.72
+[11:09 AM] Ride Car from Node32652 (90.384677, 23.799431) to Node32651 (90.383834, 23.799770), Distance: 0.094 km, Time: 0.6 min, Cost: ৳1.87
+[11:10 AM] Ride Car from Node32651 (90.383834, 23.799770) to Node32650 (90.383709, 23.799815), Distance: 0.014 km, Time: 0.1 min, Cost: ৳0.27
+[11:10 AM] Ride Car from Node32650 (90.383709, 23.799815) to Node32658 (90.383357, 23.799945), Distance: 0.039 km, Time: 0.2 min, Cost: ৳0.77
+[11:10 AM] Ride Car from Node32658 (90.383357, 23.799945) to Node32673 (90.382883, 23.800147), Distance: 0.050 km, Time: 0.3 min, Cost: ৳0.99
+[11:10 AM] Ride Car from Node32673 (90.382883, 23.800147) to Node31701 (90.382641, 23.800251), Distance: 0.027 km, Time: 0.2 min, Cost: ৳0.54
+[11:10 AM] Ride Car from Node31701 (90.382641, 23.800251) to Node31700 (90.382258, 23.800443), Distance: 0.044 km, Time: 0.3 min, Cost: ৳0.89
+[11:11 AM] Ride Car from Node31700 (90.382258, 23.800443) to Node32312 (90.382026, 23.800560), Distance: 0.027 km, Time: 0.2 min, Cost: ৳0.54
+[11:11 AM] Ride Car from Node32312 (90.382026, 23.800560) to Node32311 (90.381460, 23.800902), Distance: 0.063 km, Time: 0.4 min, Cost: ৳1.27
+[11:11 AM] Ride Car from Node32311 (90.381460, 23.800902) to Node32310 (90.380719, 23.801394), Distance: 0.093 km, Time: 0.6 min, Cost: ৳1.86
+[11:12 AM] Ride Car from Node32310 (90.380719, 23.801394) to Node32263 (90.380416, 23.801607), Distance: 0.039 km, Time: 0.2 min, Cost: ৳0.78
+[11:12 AM] Ride Car from Node32263 (90.380416, 23.801607) to Node32131 (90.380246, 23.801727), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.44
+[11:12 AM] Ride Car from Node32131 (90.380246, 23.801727) to Node32130 (90.380021, 23.801922), Distance: 0.032 km, Time: 0.2 min, Cost: ৳0.63
+[11:12 AM] Ride Car from Node32130 (90.380021, 23.801922) to Node32128 (90.379865, 23.802057), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.44
+[11:13 AM] Ride Car from Node32128 (90.379865, 23.802057) to Node32327 (90.379077, 23.802738), Distance: 0.100 km, Time: 0.6 min, Cost: ৳2.00
+[11:13 AM] Ride Car from Node32327 (90.379077, 23.802738) to Node32326 (90.378786, 23.802977), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.80
+[11:13 AM] Ride Car from Node32326 (90.378786, 23.802977) to Node32123 (90.378520, 23.803195), Distance: 0.036 km, Time: 0.2 min, Cost: ৳0.73
+[11:14 AM] Ride Car from Node32123 (90.378520, 23.803195) to Node32122 (90.378081, 23.803557), Distance: 0.060 km, Time: 0.4 min, Cost: ৳1.20
+[11:14 AM] Ride Car from Node32122 (90.378081, 23.803557) to Node32231 (90.377950, 23.803670), Distance: 0.018 km, Time: 0.1 min, Cost: ৳0.37
+[11:14 AM] Ride Car from Node32231 (90.377950, 23.803670) to Node32230 (90.377552, 23.804023), Distance: 0.056 km, Time: 0.3 min, Cost: ৳1.13
+[11:14 AM] Ride Car from Node32230 (90.377552, 23.804023) to Node32229 (90.377242, 23.804250), Distance: 0.032 km, Time: 0.2 min, Cost: ৳0.63
+[11:15 AM] Ride Car from Node32229 (90.377242, 23.804250) to Node32257 (90.376975, 23.804450), Distance: 0.035 km, Time: 0.2 min, Cost: ৳0.70
+[11:15 AM] Ride Car from Node32257 (90.376975, 23.804450) to Node32227 (90.376523, 23.804833), Distance: 0.063 km, Time: 0.4 min, Cost: ৳1.25
+[11:15 AM] Ride Car from Node32227 (90.376523, 23.804833) to Node32226 (90.376136, 23.805161), Distance: 0.054 km, Time: 0.3 min, Cost: ৳1.07
+[11:16 AM] Ride Car from Node32226 (90.376136, 23.805161) to Node31667 (90.375338, 23.805810), Distance: 0.109 km, Time: 0.7 min, Cost: ৳2.17
+[11:16 AM] Ride Car from Node31667 (90.375338, 23.805810) to Node31666 (90.374669, 23.806197), Distance: 0.081 km, Time: 0.5 min, Cost: ৳1.61
+[11:17 AM] Ride Car from Node31666 (90.374669, 23.806197) to Node32898 (90.375020, 23.806761), Distance: 0.072 km, Time: 0.4 min, Cost: ৳1.44
+[11:17 AM] Ride Car from Node32898 (90.375020, 23.806761) to Node7578 (90.375171, 23.807009), Distance: 0.032 km, Time: 0.2 min, Cost: ৳0.63
+[11:17 AM] Ride Car from Node7578 (90.375171, 23.807009) to Node32896 (90.375285, 23.807195), Distance: 0.024 km, Time: 0.1 min, Cost: ৳0.47
+[11:17 AM] Ride Car from Node32896 (90.375285, 23.807195) to Node32900 (90.375359, 23.807316), Distance: 0.015 km, Time: 0.1 min, Cost: ৳0.31
+[11:18 AM] Ride Car from Node32900 (90.375359, 23.807316) to Node7577 (90.374193, 23.807894), Distance: 0.135 km, Time: 0.8 min, Cost: ৳2.70
+[11:18 AM] Ride Car from Node7577 (90.374193, 23.807894) to Node32886 (90.374360, 23.807950), Distance: 0.018 km, Time: 0.1 min, Cost: ৳0.36
+[11:18 AM] Ride Car from Node32886 (90.374360, 23.807950) to Node7574 (90.374265, 23.808294), Distance: 0.039 km, Time: 0.2 min, Cost: ৳0.79
+[11:19 AM] Ride Car from Node7574 (90.374265, 23.808294) to Node7521 (90.374129, 23.808680), Distance: 0.045 km, Time: 0.3 min, Cost: ৳0.89
+[11:19 AM] Ride Car from Node7521 (90.374129, 23.808680) to Node7545 (90.374031, 23.809053), Distance: 0.043 km, Time: 0.3 min, Cost: ৳0.85
+[11:19 AM] Ride Car from Node7545 (90.374031, 23.809053) to Node7546 (90.374232, 23.809098), Distance: 0.021 km, Time: 0.1 min, Cost: ৳0.42
+[11:19 AM] Ride Car from Node7546 (90.374232, 23.809098) to Node7544 (90.374175, 23.809359), Distance: 0.030 km, Time: 0.2 min, Cost: ৳0.59
+[11:19 AM] Ride Car from Node7544 (90.374175, 23.809359) to Node32908 (90.374663, 23.809508), Distance: 0.052 km, Time: 0.3 min, Cost: ৳1.05
+[11:20 AM] Ride Car from Node32908 (90.374663, 23.809508) to Node32902 (90.374605, 23.809701), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.45
+[11:20 AM] Ride Car from Node32902 (90.374605, 23.809701) to Node7542 (90.374567, 23.809861), Distance: 0.018 km, Time: 0.1 min, Cost: ৳0.36
+[11:20 AM] Ride Car from Node7542 (90.374567, 23.809861) to Node32856 (90.374524, 23.810058), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.45
+[11:20 AM] Ride Car from Node32856 (90.374524, 23.810058) to Node7540 (90.374491, 23.810178), Distance: 0.011 km, Time: 0.1 min, Cost: ৳0.22
+[11:20 AM] Ride Car from Node7540 (90.374491, 23.810178) to Node32932 (90.374409, 23.810445), Distance: 0.031 km, Time: 0.2 min, Cost: ৳0.62
+[11:20 AM] Ride Car from Node32932 (90.374409, 23.810445) to Node7537 (90.374360, 23.810604), Distance: 0.018 km, Time: 0.1 min, Cost: ৳0.37
+[11:21 AM] Ride Car from Node7537 (90.374360, 23.810604) to Node7535 (90.374263, 23.810887), Distance: 0.033 km, Time: 0.2 min, Cost: ৳0.66
+[11:21 AM] Ride Car from Node7535 (90.374263, 23.810887) to Node7534 (90.374017, 23.811538), Distance: 0.077 km, Time: 0.5 min, Cost: ৳1.53
+[11:21 AM] Ride Car from Node7534 (90.374017, 23.811538) to Node7532 (90.373960, 23.811665), Distance: 0.015 km, Time: 0.1 min, Cost: ৳0.31
+[11:21 AM] Ride Car from Node7532 (90.373960, 23.811665) to Node7456 (90.373783, 23.812419), Distance: 0.086 km, Time: 0.5 min, Cost: ৳1.72
+[11:22 AM] Ride Car from Node7456 (90.373783, 23.812419) to Node17791 (90.373754, 23.812545), Distance: 0.014 km, Time: 0.1 min, Cost: ৳0.29
+[11:22 AM] Ride Car from Node17791 (90.373754, 23.812545) to Node7453 (90.373715, 23.812699), Distance: 0.018 km, Time: 0.1 min, Cost: ৳0.35
+[11:22 AM] Ride Car from Node7453 (90.373715, 23.812699) to Node17790 (90.373672, 23.812875), Distance: 0.020 km, Time: 0.1 min, Cost: ৳0.40
+[11:22 AM] Ride Car from Node17790 (90.373672, 23.812875) to Node7452 (90.373644, 23.812991), Distance: 0.013 km, Time: 0.1 min, Cost: ৳0.26
+[11:22 AM] Ride Car from Node7452 (90.373644, 23.812991) to Node7450 (90.373568, 23.813301), Distance: 0.029 km, Time: 0.2 min, Cost: ৳0.58
+[11:22 AM] Ride Car from Node7450 (90.373568, 23.813301) to Node7448 (90.373492, 23.813611), Distance: 0.035 km, Time: 0.2 min, Cost: ৳0.71
+[11:23 AM] Ride Car from Node7448 (90.373492, 23.813611) to Node7529 (90.373407, 23.813962), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.80
+[11:23 AM] Ride Car from Node7529 (90.373407, 23.813962) to Node17099 (90.373234, 23.814334), Distance: 0.044 km, Time: 0.3 min, Cost: ৳0.87
+[11:23 AM] Ride Car from Node17099 (90.373234, 23.814334) to Node7527 (90.373149, 23.814741), Distance: 0.036 km, Time: 0.2 min, Cost: ৳0.72
+[11:23 AM] Ride Car from Node7527 (90.373149, 23.814741) to Node17981 (90.373085, 23.815003), Distance: 0.030 km, Time: 0.2 min, Cost: ৳0.60
+[11:23 AM] Ride Car from Node17981 (90.373085, 23.815003) to Node7444 (90.373051, 23.815123), Distance: 0.014 km, Time: 0.1 min, Cost: ৳0.28
+[11:24 AM] Ride Car from Node7444 (90.373051, 23.815123) to Node17947 (90.372971, 23.815389), Distance: 0.031 km, Time: 0.2 min, Cost: ৳0.61
+[11:24 AM] Ride Car from Node17947 (90.372971, 23.815389) to Node17945 (90.372877, 23.815743), Distance: 0.033 km, Time: 0.2 min, Cost: ৳0.66
+[11:24 AM] Ride Car from Node17945 (90.372877, 23.815743) to Node17979 (90.372846, 23.815853), Distance: 0.013 km, Time: 0.1 min, Cost: ৳0.25
+[11:24 AM] Ride Car from Node17979 (90.372846, 23.815853) to Node17933 (90.372784, 23.816078), Distance: 0.026 km, Time: 0.2 min, Cost: ৳0.52
+[11:24 AM] Ride Car from Node17933 (90.372784, 23.816078) to Node17930 (90.372706, 23.816375), Distance: 0.034 km, Time: 0.2 min, Cost: ৳0.68
+[11:24 AM] Ride Car from Node17930 (90.372706, 23.816375) to Node17941 (90.372629, 23.816729), Distance: 0.029 km, Time: 0.2 min, Cost: ৳0.59
+[11:25 AM] Ride Car from Node17941 (90.372629, 23.816729) to Node17939 (90.372525, 23.817084), Distance: 0.031 km, Time: 0.2 min, Cost: ৳0.61
+[11:25 AM] Ride Car from Node17939 (90.372525, 23.817084) to Node17983 (90.372452, 23.817348), Distance: 0.030 km, Time: 0.2 min, Cost: ৳0.61
+[11:25 AM] Ride Car from Node17983 (90.372452, 23.817348) to Node17928 (90.372423, 23.817454), Distance: 0.012 km, Time: 0.1 min, Cost: ৳0.24
+[11:25 AM] Ride Car from Node17928 (90.372423, 23.817454) to Node17937 (90.372383, 23.817604), Distance: 0.017 km, Time: 0.1 min, Cost: ৳0.34
+[11:25 AM] Ride Car from Node17937 (90.372383, 23.817604) to Node17938 (90.372074, 23.817551), Distance: 0.032 km, Time: 0.2 min, Cost: ৳0.64
+[11:25 AM] Ride Car from Node17938 (90.372074, 23.817551) to Node17935 (90.372014, 23.817815), Distance: 0.030 km, Time: 0.2 min, Cost: ৳0.60
+[11:25 AM] Ride Car from Node17935 (90.372014, 23.817815) to Node17821 (90.371928, 23.818163), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.79
+[11:26 AM] Ride Car from Node17821 (90.371928, 23.818163) to Node17822 (90.371804, 23.818553), Distance: 0.045 km, Time: 0.3 min, Cost: ৳0.90
+[11:26 AM] Ride Car from Node17822 (90.371804, 23.818553) to Node18001 (90.371708, 23.818939), Distance: 0.044 km, Time: 0.3 min, Cost: ৳0.88
+[11:26 AM] Ride Car from Node18001 (90.371708, 23.818939) to Node18008 (90.371629, 23.819238), Distance: 0.034 km, Time: 0.2 min, Cost: ৳0.68
+[11:26 AM] Ride Car from Node18008 (90.371629, 23.819238) to Node18007 (90.371533, 23.819589), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.80
+[11:27 AM] Ride Car from Node18007 (90.371533, 23.819589) to Node17998 (90.371416, 23.820069), Distance: 0.044 km, Time: 0.3 min, Cost: ৳0.88
+[11:27 AM] Ride Car from Node17998 (90.371416, 23.820069) to Node17996 (90.371335, 23.820366), Distance: 0.034 km, Time: 0.2 min, Cost: ৳0.68
+[11:27 AM] Ride Car from Node17996 (90.371335, 23.820366) to Node18021 (90.371311, 23.820472), Distance: 0.012 km, Time: 0.1 min, Cost: ৳0.24
+[11:27 AM] Ride Car from Node18021 (90.371311, 23.820472) to Node18017 (90.371231, 23.820775), Distance: 0.035 km, Time: 0.2 min, Cost: ৳0.69
+[11:27 AM] Ride Car from Node18017 (90.371231, 23.820775) to Node18016 (90.371138, 23.821241), Distance: 0.053 km, Time: 0.3 min, Cost: ৳1.05
+[11:28 AM] Ride Car from Node18016 (90.371138, 23.821241) to Node18014 (90.370995, 23.821622), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.79
+[11:28 AM] Ride Car from Node18014 (90.370995, 23.821622) to Node18012 (90.370937, 23.821928), Distance: 0.035 km, Time: 0.2 min, Cost: ৳0.69
+[11:28 AM] Ride Car from Node18012 (90.370937, 23.821928) to Node13328 (90.370890, 23.822189), Distance: 0.029 km, Time: 0.2 min, Cost: ৳0.59
+[11:28 AM] Ride Car from Node13328 (90.370890, 23.822189) to Node13329 (90.370844, 23.822445), Distance: 0.029 km, Time: 0.2 min, Cost: ৳0.58
+[11:29 AM] Ride Car from Node13329 (90.370844, 23.822445) to Node18688 (90.370798, 23.822700), Distance: 0.029 km, Time: 0.2 min, Cost: ৳0.57
+[11:29 AM] Ride Car from Node18688 (90.370798, 23.822700) to Node18686 (90.370746, 23.822972), Distance: 0.031 km, Time: 0.2 min, Cost: ৳0.61
+[11:29 AM] Ride Car from Node18686 (90.370746, 23.822972) to Node18690 (90.370725, 23.823100), Distance: 0.014 km, Time: 0.1 min, Cost: ৳0.29
+[11:29 AM] Ride Car from Node18690 (90.370725, 23.823100) to Node18684 (90.371032, 23.823183), Distance: 0.033 km, Time: 0.2 min, Cost: ৳0.65
+[11:29 AM] Ride Car from Node18684 (90.371032, 23.823183) to Node18681 (90.370968, 23.823544), Distance: 0.041 km, Time: 0.2 min, Cost: ৳0.81
+[11:29 AM] Ride Car from Node18681 (90.370968, 23.823544) to Node18692 (90.370938, 23.823711), Distance: 0.019 km, Time: 0.1 min, Cost: ৳0.38
+[11:30 AM] Ride Car from Node18692 (90.370938, 23.823711) to Node18682 (90.370915, 23.823842), Distance: 0.015 km, Time: 0.1 min, Cost: ৳0.30
+[11:30 AM] Ride Car from Node18682 (90.370915, 23.823842) to Node18659 (90.370828, 23.824301), Distance: 0.052 km, Time: 0.3 min, Cost: ৳1.04
+[11:30 AM] Ride Car from Node18659 (90.370828, 23.824301) to Node18672 (90.370760, 23.824628), Distance: 0.037 km, Time: 0.2 min, Cost: ৳0.74
+[11:30 AM] Ride Car from Node18672 (90.370760, 23.824628) to Node18700 (90.370661, 23.825087), Distance: 0.052 km, Time: 0.3 min, Cost: ৳1.04
+[11:30 AM] Ride Car from Node18700 (90.370661, 23.825087) to Node18667 (90.371109, 23.825156), Distance: 0.046 km, Time: 0.3 min, Cost: ৳0.92
+[11:31 AM] Ride Car from Node18667 (90.371109, 23.825156) to Node18695 (90.371074, 23.825524), Distance: 0.032 km, Time: 0.2 min, Cost: ৳0.64
+[11:31 AM] Ride Car from Node18695 (90.371074, 23.825524) to Node18696 (90.371027, 23.825713), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.43
+[11:31 AM] Ride Car from Node18696 (90.371027, 23.825713) to Node18663 (90.371014, 23.825874), Distance: 0.016 km, Time: 0.1 min, Cost: ৳0.31
+[11:31 AM] Ride Car from Node18663 (90.371014, 23.825874) to Node18574 (90.370937, 23.826272), Distance: 0.029 km, Time: 0.2 min, Cost: ৳0.58
+[11:31 AM] Ride Car from Node18574 (90.370937, 23.826272) to Node18575 (90.370901, 23.826491), Distance: 0.025 km, Time: 0.1 min, Cost: ৳0.49
+[11:31 AM] Ride Car from Node18575 (90.370901, 23.826491) to Node18561 (90.370857, 23.826689), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.45
+[11:32 AM] Ride Car from Node18561 (90.370857, 23.826689) to Node18733 (90.370777, 23.827035), Distance: 0.039 km, Time: 0.2 min, Cost: ৳0.79
+[11:32 AM] Ride Car from Node18733 (90.370777, 23.827035) to Node18558 (90.370730, 23.827393), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.80
+[11:32 AM] Ride Car from Node18558 (90.370730, 23.827393) to Node18556 (90.370619, 23.827748), Distance: 0.041 km, Time: 0.2 min, Cost: ৳0.82
+[11:32 AM] Ride Car from Node18556 (90.370619, 23.827748) to Node18732 (90.370832, 23.827779), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.44
+[11:32 AM] Ride Car from Node18732 (90.370832, 23.827779) to Node18553 (90.370760, 23.828132), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.80
+[11:33 AM] Ride Car from Node18553 (90.370760, 23.828132) to Node18723 (90.371459, 23.828254), Distance: 0.072 km, Time: 0.4 min, Cost: ৳1.45
+[11:33 AM] Ride Car from Node18723 (90.371459, 23.828254) to Node18724 (90.371392, 23.828592), Distance: 0.038 km, Time: 0.2 min, Cost: ৳0.76
+[11:33 AM] Ride Car from Node18724 (90.371392, 23.828592) to Node18719 (90.371538, 23.828617), Distance: 0.015 km, Time: 0.1 min, Cost: ৳0.30
+[11:33 AM] Ride Car from Node18719 (90.371538, 23.828617) to Node18717 (90.371476, 23.828973), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.80
+[11:34 AM] Ride Car from Node18717 (90.371476, 23.828973) to Node18736 (90.371417, 23.829327), Distance: 0.040 km, Time: 0.2 min, Cost: ৳0.80
+[11:34 AM] Ride Car from Node18736 (90.371417, 23.829327) to Node18735 (90.371395, 23.829455), Distance: 0.014 km, Time: 0.1 min, Cost: ৳0.29
+[11:34 AM] Ride Car from Node18735 (90.371395, 23.829455) to Node18268 (90.371611, 23.829471), Distance: 0.022 km, Time: 0.1 min, Cost: ৳0.44
+[11:34 AM] Ride Car from Node18268 (90.371611, 23.829471) to Node18267 (90.371443, 23.830591), Distance: 0.126 km, Time: 0.8 min, Cost: ৳2.51
+[11:35 AM] Ride Car from Node18267 (90.371443, 23.830591) to Node18824 (90.371379, 23.831209), Distance: 0.069 km, Time: 0.4 min, Cost: ৳1.38
+[11:35 AM] Ride Car from Node18824 (90.371379, 23.831209) to Node18822 (90.371323, 23.831661), Distance: 0.051 km, Time: 0.3 min, Cost: ৳1.01
+[11:36 AM] Ride Car from Node18822 (90.371323, 23.831661) to Node18823 (90.371304, 23.832185), Distance: 0.058 km, Time: 0.3 min, Cost: ৳1.17
+[11:36 AM] Ride Car from Node18823 (90.371304, 23.832185) to Node18817 (90.371454, 23.832439), Distance: 0.032 km, Time: 0.2 min, Cost: ৳0.64
+[11:36 AM] Ride Car from Node18817 (90.371454, 23.832439) to Node18818 (90.371487, 23.832612), Distance: 0.020 km, Time: 0.1 min, Cost: ৳0.39
+[11:36 AM] Ride Car from Node18818 (90.371487, 23.832612) to Node18832 (90.371382, 23.833211), Distance: 0.067 km, Time: 0.4 min, Cost: ৳1.35
+[11:37 AM] Ride Car from Node18832 (90.371382, 23.833211) to Node18829 (90.371179, 23.833694), Distance: 0.058 km, Time: 0.3 min, Cost: ৳1.15
+[11:37 AM] Ride Car from Node18829 (90.371179, 23.833694) to Node18830 (90.371012, 23.834010), Distance: 0.039 km, Time: 0.2 min, Cost: ৳0.78
+[11:37 AM] Ride Car from Node18830 (90.371012, 23.834010) to Node18840 (90.370904, 23.834010), Distance: 0.002 km, Time: 0.0 min, Cost: ৳0.05
+[11:37 AM] Ride Car from Node18840 (90.370904, 23.834010) to Node18838 (90.370697, 23.833996), Distance: 0.021 km, Time: 0.1 min, Cost: ৳0.42
+[11:37 AM] Ride Car from Node18838 (90.370697, 23.833996) to Node18837 (90.370517, 23.833975), Distance: 0.018 km, Time: 0.1 min, Cost: ৳0.37
+[11:38 AM] Ride Car from Node18837 (90.370517, 23.833975) to Node18788 (90.370219, 23.833953), Distance: 0.030 km, Time: 0.2 min, Cost: ৳0.61
+[11:38 AM] Ride Car from Node18788 (90.370219, 23.833953) to Node18787 (90.369946, 23.833955), Distance: 0.028 km, Time: 0.2 min, Cost: ৳0.56
+[11:38 AM] Ride Car from Node18787 (90.369946, 23.833955) to Node18796 (90.369663, 23.833942), Distance: 0.029 km, Time: 0.2 min, Cost: ৳0.58
+[11:38 AM] Ride Car from Node18796 (90.369663, 23.833942) to Node18791 (90.369493, 23.833944), Distance: 0.017 km, Time: 0.1 min, Cost: ৳0.35
+[11:38 AM] Ride Car from Node18791 (90.369493, 23.833944) to Node18782 (90.369472, 23.834251), Distance: 0.034 km, Time: 0.2 min, Cost: ৳0.68
+[11:38 AM] Ride Car from Node18782 (90.369472, 23.834251) to Node18781 (90.369462, 23.834660), Distance: 0.045 km, Time: 0.3 min, Cost: ৳0.91
+[11:39 AM] Ride Car from Node18781 (90.369462, 23.834660) to Node18816 (90.369446, 23.835095), Distance: 0.048 km, Time: 0.3 min, Cost: ৳0.97
+[11:39 AM] Ride Car from Node18816 (90.369446, 23.835095) to Node18812 (90.368017, 23.835074), Distance: 0.145 km, Time: 0.9 min, Cost: ৳2.91
+[11:40 AM] Ride Car from Node18812 (90.368017, 23.835074) to Node18811 (90.368000, 23.835507), Distance: 0.048 km, Time: 0.3 min, Cost: ৳0.96
+[11:40 AM] Ride Car from Node18811 (90.368000, 23.835507) to Node18810 (90.367982, 23.835966), Distance: 0.051 km, Time: 0.3 min, Cost: ৳1.02
+
+Arrival Time: 11:40 AM
+Total Distance: 21.817 km
+Total Travel Time: 130.9 minutes (2.2 hours)
+Total Cost: ৳436.34
+Exported path to route_problem5.kml
+
+-------Mr Efficient--------
+[1] Shortest Car Route [Problem 1]
+[2] Cheapest Route(Car and Metro) [Problem 2]
+[3] Cheapest Route(Car, Metro and Bus) [Problem 3]
+[4] Cheapest Route with Time Schedule [Problem 4]
+[5] Fastest Route with Time Schedule [Problem 5]
+[6] Cheapest Route with Deadline [Problem 6]
+[7] Quit
+-----------------------------
+Enter Choice: -----------------------------

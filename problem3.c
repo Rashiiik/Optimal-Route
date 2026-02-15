@@ -4,12 +4,15 @@
 #include "mode.h"
 #include "nodesAndEdges.h"
 #include "csvParse.h"
+
+int route = 0;
+
 void printProblem3DetailsWithEdges(int path[], int pathEdges[], int pathLen, int source, int target, 
                                     double srcLat, double srcLon, double destLat, double destLon) {
     double carRate = 20.0;
     double metroRate = 5.0;
     double bikolpoRate = 7.0;
-    double uttaraRate = 10.0;
+    double uttaraRate = 7.0;
     double totalDistance = 0.0;
     double totalCost = 0.0;
 
@@ -57,6 +60,7 @@ void printProblem3DetailsWithEdges(int path[], int pathEdges[], int pathLen, int
                nodes[from].name, nodes[from].lon, nodes[from].lat,
                nodes[to].name, nodes[to].lon, nodes[to].lat,
                distSeg, costSeg);
+        route++;
     }
 
     if (fabs(nodes[target].lat - destLat) > 1e-6 || fabs(nodes[target].lon - destLon) > 1e-6) 
@@ -105,7 +109,7 @@ void runProblem3() {
     double carRate = 20.0;
     double metroRate = 5.0;
     double bikolpoRate = 7.0;
-    double uttaraRate = 10.0;
+    double uttaraRate = 7.0;
 
     for (int count = 0; count < numNodes; count++) 
     {
@@ -173,4 +177,6 @@ void runProblem3() {
     printProblem3DetailsWithEdges(path, pathEdges, pathLen, source, target, srcLat, srcLon, destLat, destLon);
 
     exportPathToKML(path, pathLen, "route_problem3.kml");
+
+    printf("No of routes: %d", route);
 }
